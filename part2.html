@@ -699,7 +699,7 @@ border-width: 5px;
          <li class="safari bad">Safari 3.1</li>
          <li class="firefox bad">Firefox 2</li>
          <li class="opera bad">Opera 12</li>
-         <li class="ie new">IE 10</li>
+         <li class="ie">IE 10</li>
          <li class="txt"><span onClick="vendorPrefix('ms', 'gridlayout')">-ms-</span> required</li>
      </ul>
 </div>
@@ -729,13 +729,6 @@ background-attachment: scroll;</pre>
     <p>Can now set 4-value position!</p>
     <pre contenteditable>background-position: bottom 20px right 20px; </pre>
     <p><a href="http://jsfiddle.net/estelle/wja5m/6/">Example</a>
-      <ul class="icons">
-         <li class="chrome bad">Chrome 14</li>
-         <li class="safari bad">Safari 5.1</li>
-         <li class="firefox bad">Firefox 7</li>
-         <li class="opera">Opera 11</li>
-         <li class="ie bad">IE 10</li>
-     </ul>
     </section>
 </div>
 
@@ -751,14 +744,6 @@ background-attachment: scroll;</pre>
         <li>&lsquo;contain&rsquo; grows/shrinks to fully fit</li>
         <li>&lsquo;cover&rsquo; grows to min size that covers 100% of height &amp; width</li>
     </ul>
-     <ul class="icons">
-         <li class="chrome">Chrome</li>
-         <li class="safari"><span onClick="vendorPrefix('r', 'bgsize')">Safari</span></li>
-         <li class="firefox">Firefox 4</li>
-         <li class="opera">Opera 11</li>
-         <li class="ie new">IE 9</li>
-         <li class="txt">add <span onClick="vendorPrefix('m', 'bgsize')">-moz-</span> for FF 3.6 and earlier</li>
-     </ul>
     </section>
     <script defer>
     function changeBackSide(event) {
@@ -784,8 +769,8 @@ background-attachment: scroll;</pre>
          <li class="safari"><span onClick="vendorPrefix('r', 'bgsize')">Safari</span></li>
          <li class="firefox">Firefox 4</li>
          <li class="opera">Opera</li>
-         <li class="ie new">IE 9</li>
-         <li class="txt">add <span onClick="vendorPrefix('m', 'bgclip')">-moz-</span> for FF 3.6 and earlier</li>
+         <li class="ie">IE 9</li>
+
      </ul>
     </section>
 </div> <div class="slide" id="bgorigin">
@@ -801,8 +786,8 @@ background-attachment: scroll;</pre>
          <li class="safari">Safari 5.1</li>
          <li class="firefox">Firefox 4</li>
          <li class="opera">Opera</li>
-         <li class="ie new">IE 9</li>
-         <li class="txt">add <span onClick="vendorPrefix('m', 'bgorigin')">-moz-</span> for FF 3.6, <span onClick="vendorPrefix('w', 'bgorigin')">-webkit-</span> for Safari 5</li>
+         <li class="ie">IE 9</li>
+
      </ul>
     </section>
 </div>
@@ -832,9 +817,8 @@ background-attachment: scroll;</pre>
          <li class="safari">Safari 3.1</li>
          <li class="firefox">Firefox 3.5</li>
          <li class="opera">Opera 10.5</li>
-         <li class="ie bad">IE 10?</li>
+         <li class="ie new">IE 11</li>
      </ul>
-    <li>All vendor prefixed</li>
     <li><a href="http://border-image.com/">Border image tool</a></li>
     <li><a href="http://www.sitepoint.com/css3-border-image/">border-image tutorial</a></li>
     <li><a href="http://www.standardista.com/css3/css3-border-properties">border-image browser support</a></li>
@@ -954,18 +938,18 @@ W = <input type="range" id="width" min="0" max="50" value="34" step="1" onChange
 	<header><h1>calc()</h1></header>
     <section class="content">
     <ul class="icons" style="clear: both;">
-         <li class="chrome bad">Chrome</li>
-         <li class="safari bad">Safari</li>
-         <li class="firefox new">Firefox 4</li>
-         <li class="opera bad">Opera 11</li>
-         <li class="ie new">IE 9</li>
+         <li class="chrome">Chrome 26</li>
+         <li class="safari">Safari 6.1</li>
+         <li class="firefox">Firefox 16</li>
+         <li class="opera">Opera 15</li>
+         <li class="ie">IE 9/10</li>
      </ul>
 <pre contenteditable>.colA {
   width:50%;
   margin-right: 1em;
 }
 .colB {
-  width: -moz-calc(50% - 1em);
+  width: calc(50% - 1em);
 }</pre>
      <ul>
         <li>+, -, *, /, mod, min, and max operators.</li>
@@ -995,8 +979,8 @@ small {
          <li class="chrome">Chrome 6</li>
          <li class="safari">Safari 5</li>
          <li class="firefox">Firefox 3.6</li>
-         <li class="opera bad">Opera 12?</li>
-         <li class="ie new">IE 9</li>
+         <li class="opera">Opera</li>
+         <li class="ie">IE 9</li>
      </ul>
      <ul>
        <li><a href="http://snook.ca/archives/html_and_css/font-size-with-rem">Article on rem</a></li><li><a href="http://www.standardista.com/css3/css-values-lengths-times-frequenc-angles">Article on units of measurement</a></li></ul>
