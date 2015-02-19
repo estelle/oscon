@@ -1,0 +1,1687 @@
+<!doctype html>
+<meta charset="utf-8">
+<html> 
+  <head> 
+    <!--[if gte IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]--> 
+    <!--[if lt IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    <![endif]--> 
+    <meta charset="utf-8" />
+    <title>HTML5 &amp; CSS3: The Good Enough Parts</title>
+    <link href="http://fonts.googleapis.com/css?family=Paytone+One:regular" rel="stylesheet" type="text/css" />
+    
+<link rel="stylesheet" media="print" href="../openwebcamp3/print.css"/>  
+<link rel="stylesheet" media="all" href="../openwebcamp3/screen.css"/>  
+<link rel="stylesheet" media="all" href="../openwebcamp3/effects.css"/>
+<link rel="stylesheet" href="http://standardista.com/cssgradients/css/religion.css"/> 
+
+</head> 
+<body> 
+
+  
+  <div id="info">
+    <p>Estelle Weyl &middot <a href="http://standardista.com">Standardista.com</a> &middot; <a href="http://www.twitter.com/estellevw">@estellevw</a> &middot;Press <span class="key">&rarr;</span> key to advance.  &middot;Press <span class="key">2</span> for notes.
+    </p>
+  </div>
+  
+  <div id="presentation">
+     
+   <div id="presentation-counter"></div>
+      
+   <div id="slides">
+   
+    
+    
+   
+    <div class="slide intro">
+     <header>
+      <h1>HTML5 &amp; CSS3:<br>
+		  the Good Enough Parts</h1>
+      <p>Estelle Weyl 
+     	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
+     </p><p><a href="http://standardista.com">www.standardista.com</a><br>
+        <a href="http://twitter.com/estellevw">@estellevw</a>
+     </p>   
+     </header>
+    </div>   
+    
+   <div class="slide" id="components">
+      <section class="content">
+      <div class="col">
+      <div class="even">
+      <p>CSS</p>
+      <ul><li>
+        <span class="done">@font-face Web fonts</span></li>
+        <li class="done">
+        calc() in CSS</li>
+        <li class="done">
+        Generated content</li>
+        <li class="done">
+        Gradients</li>
+        <li class="done">display values</li>
+        <li class="done">
+          Mulitiple backgrounds</li>
+        <li class="done">background image properties</li>
+        <li class="done">
+        Border images</li>
+        <li class="done">
+        Border-radius </li>
+        <li class="done">
+        Box-shadow</li>
+        <li class="done">
+        Box-sizing</li>
+        <li class="done">
+        New Colors</li>
+        <li class="done">Alphatransparency</li>
+        <li class="done">
+        Media Queries</li>
+        <li class="done">
+        Multiple column layout</li><li>
+        object-fit/object-position</li><li>
+          <span class="done">Opacity</span></li>
+        <li class="done">CSS3 
+        selectors</li>
+        <li class="done">
+        Text-shadow</li>
+        <li class="done">
+        Transforms</li>
+        <li class="done">
+        Transitions</li>
+        <li class="done"> 3D Transforms</li>
+        <li class="done"> Animation</li>
+        <li class="done">
+        Word-wrap</li>
+        <li class="done">
+        Flexible Box Layout Module</li>
+        <li class="done">Grid Layout</li>
+        <li class="done">
+        rem (root em) units</li>
+        <li>
+        Masks</li><li>
+        Reflections</li><li>
+        text-stroke<span class="done"></span></li>
+        <li class="done">
+        Text-overflow</li>
+        </ul>
+        </div>
+        </div>
+        <div class="col">
+        <div>
+        <p>
+        HTML5</p>
+        <ul>
+        <li class="yes">Semantic elements</li>
+        <li class="yes">Audio element</li>
+        <li class="yes">Canvas</li>
+        <li class="yes">contenteditable attribute</li>
+        <li class="yes">dataset &amp; data-* attributes</li>
+        <li class="yes">Details &amp; Summary elements</li>
+        <li class="future">Drag and Drop</li>
+        <li class="yes">HTML5 form features</li>
+        <li class="yes">Form validation</li>
+        <li>Datalist element</li>
+        <li class="yes">Progress &amp; Meter</li>
+        <li class="yes">New semantic elements</li><li class="future">
+        Offline web applications</li><li class="yes">
+        Ruby annotation</li><li class="future">
+        Session history management</li><li>
+        Text API for Canvas</li><li>
+        Toolbar/context menu</li><li class="yes">
+          <span class="yes">Video element</span></li>
+        <li class="yes">
+        WebGL - 3D Canvas graphics
+        </li>
+        </ul>
+        </div>
+        <div class="even" style="border-bottom-left-radius:0; border-bottom-right-radius:0;">
+        <p>
+        JS API</p>
+        <ul><li>
+        Cross-document messaging</li><li>
+        Cross-Origin Resource Sharing</li><li>
+          <span class="future">File API</span></li>
+        <li class="future">
+        Geolocation</li>
+        <li class="future">
+        Hashchange event</li>
+        <li class="future">
+        IndexedDB</li>
+        
+        <li>
+     
+        JSON parsing</li>
+        </ul>
+        </div>
+        
+        </div>
+        <div class="col">
+        <div class="even" style="border-top-left-radius:0; border-top-right-radius:0;">
+        <ul><li>
+        Server-sent DOM events</li><li>
+        Web Notifications</li><li>
+        Web Sockets</li><li class="future">
+        Web Storage</li><li>
+        Web Workers</li><li>
+        Stream API</li><li class="future">
+        Web SQL Database</li><li>
+        SVG
+        </li>
+        </ul>
+        </div>
+        <div>
+        <p>
+        Other</p>
+        <ul><li>
+        classList (DOMTokenList )</li><li>
+        Data URLs</li><li>
+        getElementsByClassName</li><li>
+        MathML</li>
+        <li class="yes">
+        MPEG-4/H.264/WebM/VP8/Ogg/Theora video formats</li><li>
+        querySelector/querySelectorAll</li><li>
+        Touch events</li><li class="yes">
+        WAI-ARIA Accessibility features</li>
+        <li class="done">
+        Font Formats</li><li>
+        XHTML served as application/xhtml+xml</li><li>
+        XMLHttpRequest 2</li><li>
+        XHTML+SMIL animation</li>
+      </ul>
+      </div>
+      </div>
+      </section>
+  </div> 
+  
+  
+
+    
+     
+ 
+<!-- ###################################################################   
+
+	    Part 3: HTML5
+
+     ################################################################### -->  
+    <div class="slide intro">
+      <header>
+         <h1><b>Part 3:</b>
+         HTML5</h1>
+         </h1>
+      </header>
+  </div>    
+  
+   
+  
+  
+  
+  <div class="slide">
+      <header>
+         <h1>HTML5 Components
+         </h1>
+      </header>
+      <section class="content columns2">
+        <ul>
+        <li>Doctype</li>
+        <li>Character Set</li>
+        <li>Type Attribute</li>
+        <li>Semantic elements</li>
+        <li>&lt;figure> &amp; &lt;figcaption></li>
+        <li>&lt;details> &amp; &lt;summary></li>
+        <li>Ruby annotation</li>
+        <li>contenteditable attribute</li>
+        <li>dataset &amp; data-* attributes</li>
+        <li>HTML5 form features</li>
+        <li>Form validation</li>
+        <li>&lt;datalist&gt; element</li>
+        <li>&lt;progress> &amp; &lt;meter></li>
+        <li>&lt;audio> element</li>
+        <li>&lt;video> element</li>
+        <li>&lt;canvas></li>
+        <li>WebGL - 3D Canvas graphics</li>
+        </ul>
+      </section>
+  </div>  
+  
+     <!-- <div class="slide" style="padding:0; overflow:hidden;"> 
+    
+    
+     <object data="http://html5readiness.com/" style="height: 780px;
+width: 940px;
+overflow:hidden; "> 
+     </object> 
+     
+ 
+  </div> -->
+  
+     <div class="slide"><header>
+         <h1>Old v. New Doctype
+         </h1>
+      </header>
+      <section class="content">
+        <style>
+		</style>
+       <pre contenteditable class="">&lt;!DOCTYPE html<span class="boo"> PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; 
+   &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;</span>&gt;
+&lt;html<span class="boo">  xmlns=&quot;http://www.w3.org/1999/xhtml&quot;</span>&gt;
+&lt;head&gt;
+&lt;meta<span class="boo">  http-equiv=&quot;Content-Type&quot; content=&quot;text/html;</span> charset=UTF-8<span class="boo"> &quot; </span>/&gt;
+&lt;title&gt;<b id="newdoctitle">XHTML1 Strict Document</b>&lt;/title&gt;
+&lt;script<span class="boo">  type=&quot;text/javascript&quot;</span> src=&quot;boo.js&quot;&gt;&lt;/script&gt;
+&lt;link<span class="boo">  type=&quot;text/css&quot;</span> rel=&quot;stylesheet&quot; href=&quot;a.css&quot;/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;<input type="button" class="button"  onclick="newDoctype(this)" value="Change" style=" float:right"></pre>
+</section>
+<script defer>
+function newDoctype(el){
+	if(el.parentNode.className=='booOff'){
+		el.parentNode.className='booshow';
+		document.getElementById('newdoctitle').innerHTML = 'XHTML1 Strict Document';
+		
+	} else {
+		el.parentNode.className='booOff';
+		document.getElementById('newdoctitle').innerHTML = 'HTML5 Document';
+	}
+}
+</script>
+  </div>  
+  <!--
+     <div class="slide"><header>
+         <h1>New Syntax
+         </h1>
+      </header>
+      <section class="content">
+<pre contenteditable>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;HTML5 Document&lt;/title&gt;
+&lt;script src=&quot;boo.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;a.css&quot;/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<ul class="notes">
+<li>Short DTD</li>
+<li>Short Charset</li>
+<li>No &lsquo;type&rsquo; attribute</li>
+</ul>
+</section>
+  </div> 
+-->  
+  
+     
+  <div class="slide">
+      <header>
+         <h1>Minimalistic Syntax
+         </h1>
+      </header>
+      <section class="content">
+      <pre contenteditable>
+&lt;!DOCTYPE html&gt;
+&lt;meta charset=UTF-8&gt;
+&lt;title&gt;Document Intentionally Blanks&lt;/title&gt;
+</pre>
+
+      <pre contenteditable>
+&lt;!DOCTYPE html&gt;
+&lt;title&gt;Tweetable Docoument&lt;/title&gt;
+&lt;p&gt;Tweetable HTML5&lt;/p&gt;
+</pre>
+
+
+<ul class="notes">
+<li>Short DTD</li>
+<li>Short Charset</li>
+<li>No &lsquo;type&rsquo; attribute</li>
+<li>&lt;body&gt; and &lt;head&gt; are inferred.</li>
+</ul>
+      </section>
+  </div> 
+  
+     <div class="slide" id="semels">
+      <header>
+         <h1>Non-Semantic Elements
+         </h1>
+      </header>
+    <section class="content">
+    
+        <div>
+            <div class="divheader">&lt;div id="header"&gt;</div>
+            <div class="divnav">&lt;div id="nav"&gt;</div>
+            <div  class="divmain">
+                <div class="divaside">&lt;div id="sidebar"&gt;</div>
+                &lt;div id="content"&gt;
+                    <div class="divarticle">&lt;div class="article"&gt;
+                        <div class="divsection">&lt;div class="section"&gt;</div>
+                        <div class="divsection">&lt;div class="section"&gt;</div>
+                    </div>
+                </div>
+            <div class="divfooter">&lt;div class="footer"&gt;</div>
+        </div>
+    </section>
+  </div> 
+  
+  
+   <div class=" slide" id="semels">
+      <header>
+         <h1>Semantic Elements</h1>
+      </header>
+    <section class="content">
+        <div>
+            <div class="divheader">&lt;header&gt;</div>
+            <div class="divnav">&lt;nav&gt;</div>
+            <div  class="divmain">
+                <div class="divaside">&lt;aside&gt;</div>
+                &lt;div id="content"&gt;
+                    <div class="divarticle">&lt;article&gt;
+                      <div class="divsection">&lt;section&gt;</div>
+                        <div class="divsection">&lt;section&gt;</div>
+                    </div>
+                </div>
+            <div class="divfooter">&lt;footer&gt;</div>
+        </div>
+    </section>
+  </div> 
+  
+     <div class="slide">
+      <header>
+         <h1>hgroup
+         </h1>
+      </header>
+      <section class="content">
+      
+      <pre contenteditable>
+&lt;hgroup&gt;
+   &lt;h1&gt;This is my header&lt;/h1&gt;
+   &lt;h2&gt;This is my subtitle&lt;/h2&gt;
+&lt;hgroup&gt;
+      </pre>
+      </section>
+  </div> 
+  
+     <div class="slide">
+      <header>
+         <h1>figure &amp; figcaption
+         </h1><figure id="figureex"><a href="http://www.sitepoint.com/books/htmlcss1/"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World"></a><figcaption>My Book</figcaption></figure>
+      </header>
+      <section class="content">
+        <pre contenteditable style="float:left;">&lt;figure&gt;
+  &lt;img src=&quot;htmlcss1.png&quot; 
+    alt=&quot;HTML5 &amp;amp; CSS3 for the Real World&quot;/&gt;
+  &lt;figcaption&gt;
+     My Book
+  &lt;/figcaption&gt;
+&lt;/figure&gt; <input type="button" class="button" value="Add Style" onClick="toggleFigureClass(event);"/></pre>
+
+
+      </section>
+      <script defer>
+	  function toggleFigureClass(event){
+		  var el = document.getElementById('figureex');
+		  if (el.className == 'styled') {
+				el.className =''; 
+				event.target.value = 'Add Style'; 
+		  } else {
+			    el.className = 'styled';
+				event.target.value = 'Remove Style'; 
+		  }
+	  }
+	  </script>
+  </div> 
+  
+     <div class="slide">
+      <header>
+         <h1>Details &amp; Summary</h1>
+         </h1>
+      </header>
+<section class="content">
+  
+      <pre contenteditable>&lt;details&gt;
+   &lt;summary&gt;5 of 5 stars from three reviews&lt;/summary&gt;
+   &lt;ul&gt;
+      &lt;li&gt;5 stars from Amazon&lt;/li&gt;
+      &lt;li&gt;5 stars from Costco&lt;/li&gt;
+      &lt;li&gt;5 stars from Barns &amp;amp; Noble&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/details&gt;</pre>
+</section>
+<p>Example: Click below</p>
+<details>
+   <summary>5 of 5 stars from three reviews</summary>
+   <ul>
+      <li>5 stars from Amazon</li>
+      <li>5 stars from Costco</li>
+      <li>5 stars from Barns &amp; Noble</li>
+   </ul>
+</details>
+<ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome 12</li>
+         <li class="safari bad">Safari</li>
+         <li class="firefox bad">Firefox 7</li>
+         <li class="opera bad">Opera 11</li>
+         <li class="ie bad">IE 10</li>
+     </ul>
+  </div> 
+  
+   <div class="slide">
+      <header>
+         <h1>New Elements
+         </h1>
+      </header>
+      <section class="content columns3">
+        <ul>
+          <li>article</li>
+          <li>
+            aside</li>
+          <li>
+            audio</li>
+          <li>
+            canvas</li>
+          <li>
+            command</li>
+          <li>
+            datalist</li>
+          <li>
+            details</li>
+          <li>
+            embed</li>
+          <li>
+            figcaption</li>
+          <li>
+            figure</li>
+          <li>
+            footer</li>
+          <li>
+            header</li>
+          <li>
+            hgroup</li>
+          <li>
+            keygen</li>
+          <li>
+            mark</li>
+          <li>
+            meter</li>
+          <li>
+            nav</li>
+          <li>
+            output</li>
+          <li>
+            progress</li>
+          <li>
+            rp</li>
+          <li>
+            rt</li>
+          <li>
+            ruby</li>
+          <li>
+            section</li>
+          <li>
+            source</li>
+          <li>
+            summary</li>
+          <li>
+            time</li>
+          <li>
+            video</li>
+          <li>
+            wbr</li>
+        </ul>
+      </section>
+  </div> 
+<div class="slide">
+      <header>
+         <h1>Changed Elements</h1>
+      </header>
+     <section class="content">
+     <div class="columns2">
+        <ul>
+         <li>&lt;a&gt; </li>
+         <li>&lt;small&gt; </li>
+         <li>&lt;s&gt; </li>
+         <li>&lt;cite&gt; </li>
+         <li>&lt;i&gt; </li>
+         <li>&lt;b&gt; </li>
+         <li>&lt;u&gt;</li>
+         <li>&lt;hr&gt;</li>
+         <li>&lt;menu&gt; </li>
+         <li>&lt;input&gt; </li>
+         <li>&lt;meta&gt; </li>
+        </ul>
+     </div>
+     </section>
+  </div>
+  
+     <div class="slide">
+      <header>
+         <h1>Supporting Old Browsers
+         </h1>
+      </header>
+      
+      <section class="content">
+      <p>IE6-8 does not style elements that don't exist, so create the elements!</p>
+      <pre contenteditable>&lt;!--[if IE]&gt; 
+&lt;script type="text/javascript"&gt; 
+(function(){ 
+  var html5elmeents ="article|aside|audio|canvas|...|video";
+  html5elmeents.split('|'); 
+  for(var i = 0; i &lt; html5elmeents.length; i++){
+    document.createElement(html5elmeents[i]); 
+  } 
+})(); 
+&lt;/script&gt; 
+&lt;![endif]--&gt;  </pre>
+      </section>
+  </div> 
+  
+  
+  <div class="slide" style="padding:0; overflow:hidden">
+      <object data="http://www.modernizr.com/" style="height: 780px;
+width: 940px;
+overflow:scroll; text-align:center "> 
+             
+     </object> 
+  </div> 
+  
+  <div class="slide" style="padding:0; overflow:hidden">
+      <object data="http://www.html5boilerplate.com/" style="height: 780px;
+width: 940px;
+overflow:scroll; text-align:center "> 
+             
+     </object> 
+  </div> 
+     <div class="slide">
+      <header>
+         <h1>Ruby annotation
+         </h1>
+      <p style="text-align:left; margin-top: -2px;">"Ruby" are short runs of text alongside the base text, typically used in East Asian documents to indicate pronunciation or to provide a short annotation. </p>
+      </header>
+      <section class="content" style="margin-top: -38px;">
+      <ul>
+      	<li><img src="http://dev.w3.org/csswg/css3-ruby/images/licence.png" alt="" style="float:right"/>&lt;ruby&gt; <span class="notes">container for the next 2 elements</span></li>
+      	<li>&lt;rt&gt; <span class="notes">ruby text</span></li>
+      	<li>&lt;rp&gt; <span class="notes">ruby parenthesis</span></li>
+        </ul>
+        <pre contenteditable><b>display:</b> ruby | ruby-base | ruby-text | 
+   ruby-base-container | ruby-text-container;
+
+<b>ruby-align</b>: <strong>auto</strong> | start | left | center | end | right | 
+   distribute-letter | distribute-space | line-edge;
+
+<b>ruby-overhang</b>: auto | start | end | <strong>none</strong>;
+
+<b>ruby-position</b>: before | after | right | inline;
+
+<b>ruby-span</b>: attr(x) | <strong>none</strong>;</pre>
+       
+      </section>
+  </div>
+  
+  
+   <div class="slide">
+      <header>
+         <h1>Because Fluff is Yummy!
+         </h1>
+      </header>
+      <section class="content">
+      <p><strong class="imp">HTML5 Workshop</strong><br>
+      Time: 9:00am Friday<br>
+	  Location: Atlantic I <br>
+      By Nathaniel Schutta</p>
+      </section>
+  </div> 
+  
+  
+  
+  
+      <div class="slide">
+      <header>
+         <h1>New Attributes
+         </h1>
+      </header>
+      <section class="content">
+      <ul>
+      	<li>tabindex <b class="notes imp">/* now applicable to any element (-1)</b></li>
+      	<li>hidden <b class="notes imp">/* no longer relevant */</b></li>	
+        <li class="bad">contextMenu <b class="notes imp">contextmenu="menuID"</b></li>
+        <li>spellCheck <b class="notes imp">/* denotes errors */</b></li>
+        <li>data-* <b class="notes imp">/* anything you want, accessible via dataset */</b></li>
+      	<li>ContentEditable <b class="notes imp">/* you can edit. accessible via the DOM */</b></li>
+        <li>draggable <b class="notes imp">/* with the drag &amp; drop API */</b></li>
+        <li>dropzone <b class="notes imp">/* with the drag &amp; drop API */</b></li>
+        <li>microdata attributes <b class="notes imp">/* like microformats */</b></li>
+        <li>ARIA <b class="notes imp">/* accessibility */</b></li>
+      </ul>
+      </section>
+  </div> 
+  
+     <div class="slide">
+      <header>
+         <h1>tabindex
+         </h1>
+      </header>
+      <section class="content">
+      <pre contenteditable>&ltp tabindex="-1">Focusable with Javascript&lt;/p></pre>
+      <ul>
+      <li>Every element can have tabindex</li>
+      <li>BUT: Maintaining source order is important</li>
+      <li>Only give a tabindex of -1</li>
+      <li>REASON: Enables element to be focusable with JS<br>
+without changing &lsquo;tab&raquo; order</li>
+      </ul>
+      </section>
+  </div> 
+  
+     <div class="slide">
+      <header>
+         <h1>contentEditable (&amp; spellcheck)
+         </h1>
+      </header>
+      <section class="content">
+      <pre contenteditable>&lt;pre contenteditable>Look. I am editable&gt;/pre></pre>
+      <pre contenteditable>I am editable</pre>
+      <p contenteditable spellcheck style="font-family:Arial, Helvetica, sans-serif">This paragrph has an error.</p>
+      
+      <textarea spellcheck=true>This paragrph has an error.</textarea>
+      
+      <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome</li>
+         <li class="safari ">Safari</li>
+         <li class="firefox">Firefox 2</li>
+         <li class="opera ">Opera</li>
+         <li class="ie ">IE</li>
+         <li class="txt">Not supported on Mobile. </li>
+     </ul>
+     <pre contenteditable>spellcheck="true | false"</pre>
+      </section>
+  </div> 
+     <div class="slide">
+      <header>
+         <h1>data-* attributes
+         </h1>
+         <p class="notes">Define your own DOM manipulable data attributes</p>
+      </header>
+      
+      <section class="content">
+        
+        <pre contenteditable>&lt;div id="card27" <b>data-cardID</b>="27" <b>data-row</b>="3" <b>data-col</b>="2"&gt;&lt;/div&gt;</pre>
+        <pre contenteditable>var info = document.querySelector('#card27');
+var cardinfo = [];
+for (var key in info.<b>dataset</b>) {
+  cardinfo.push(key, ': ', info.<b>dataset</b>[key], ',');
+}
+var currentCard = cardinfo.join('');</pre>
+        <p>Result:</p>
+        <pre contenteditable>currentCard == 'cardID: 27, row: 3, col: 2'</pre>
+        <pre contenteditable>var cardID = info.getAttribute('data-cardID'); //27</pre>
+        <p><small>All browsers support "data-*", but full support of 'dataset started with IE10, FF6, Safari 5.1, Chrome 7, Opera 11.1</small></p>
+     
+      </section>
+  </div>
+  
+   
+<div class="slide">
+      <header>
+         <h1>Microdata
+         </h1>
+      <p>Google processes RDFa, Microformats and Microdata.</p>
+      </header>
+      <section class="content"> 
+      <pre style="float:left">  itemid
+  itemprop
+  itemref
+  itemscope
+  itemtype</pre>
+<pre style="float: right;">person       url
+nickname     affiliation(org)
+photo        friend
+title        contact
+role         acquaintance
+             address(adr)</pre>
+      <pre style="clear: both">&lt;div itemscope itemtype="<a href="http://data-vocabulary.org/">http://data-vocabulary.org/</a>Person">  
+ &lt;img src="estelle.gif" itemprop="photo">  
+  &lt;p>Name: &lt;i itemprop="name">Estelle Weyl&lt;/i>
+  &lt;p>Title: &lt;i itemprop="title">Speaker, UI Engineer&lt;/i>   
+  &lt;p>Blog: &lt;a href="http://standardista.com" itemprop="affliation">Standardista</a>.   
+  &lt;p itemprop="address" itemscope  
+    itemtype="http://data-vocabulary.org/Address">Address:   
+    &lt;i itemprop="locality">San Carlos&lt;/i>,  
+    &lt;i itemprop="region">CA&lt;/i>&lt;/p>  
+&lt;/div></pre>  
+      
+      </section>
+  </div> 
+  
+    <div class="slide">
+      <header>
+         <h1>WAI-ARIA (examples)
+         </h1>
+      </header>
+      <section class="content">
+      <div style="float: right"><a href="http://www.w3.org/TR/wai-aria/">W3C specs</a></div>
+      <ol>
+        <li>Roles
+          <ul>
+            <li>
+            &lt;div role=&quot;menubar&quot;&gt;&lt;/div&gt;</li>
+            <li>&lt;div role=&quot;search&quot;&gt;&lt;/div&gt;</li>
+            <li>&lt;div role=&quot;navigation&quot;&gt;</li>
+            <li>role=application | menuitem | menuitemradio</li>
+          </ul>
+        </li>
+        <li>Live Regiouns
+          <ul>
+            <li>&lt;div aria-live=&quot;assertive | polite | off"&gt;</li>
+          </ul>
+        </li>
+        <li>Widget Accessibility Attributes
+          <ul>
+            <li>aria-haspopup | 
+             aria-disabled
+            ="true | false"</li>
+            <li>aria-controls | aria-describedby = &quot;id&quot;</li>
+            <li>aria-checked</li>
+          </ul>
+        </li>
+        <li>Tab index
+          <ul>
+            <li>&lt;div tabindex=&quot;-1&quot;&gt;</li>
+          </ul>
+        </li>
+        </ol>
+      </section>
+  </div>  
+  
+     <div class="slide">
+      <header>
+         <h1>Web Forms
+         </h1>
+      </header>
+      <section class="content">
+      <ul>
+      <li>
+      13 new input types
+      </li>
+      <li>
+      New attributes
+      </li>
+      <li>Native form validation</li>
+      <li>UI features</li>
+      <li>CSS pseudoclasses </li>
+      </ul>
+      <pre contenteditable>&lt;style&gt;<br>  input:required {<br>    border: 1px solid red;<br>  }<br>  input:focus:invalid {<br>    background-color: pink;<br>  }<br>&lt;/style&gt;     </pre>
+      </section>
+  </div> 
+  
+     <div class="slide" id="forminputs">
+      <header>
+         <h1>New Input Types
+         </h1>
+      </header>
+      <section class="content">
+      <form>
+      <ul>
+          		<li>color <input type="color"></li>
+                <li>date <input type="date"></li>
+                <li>datetime <input type=datetime></li>
+                <li>datetime-local <input type=datetime-local></li>
+                <li>email <input type="email"></li>
+                <li>month <input type="month"></li>
+                
+                </ul>
+                <ul><li>number <input type="number" min="0" max="10" step="0.5"></li>
+                <li>range <input type="range" min="0" max="10" step="0.5"></li>
+                <li>search <input type="search"></li>
+                <li>tel <input type="tel"></li>
+                <li>time <input type="time"></li>
+                <li>url <input type="url"></li>
+                <li>week <input type=week></li>
+          </ul>
+          </form>
+      </section>
+  </div> 
+  
+     <div class="slide">
+      <header>
+         <h1>New input attributes
+         </h1>
+      </header>
+      <section class="content">
+      <ul class="columns2">
+                  <li>form</li>
+                  <li>readonly    </li>
+                  <li>autocomplete    </li>
+                  <li>autofocus    </li>
+                  <li>list    </li>
+                  <li>pattern    </li>
+                  <li>required*    </li>
+                  <li>placeholder    </li>
+                  <li>multiple    </li>
+                  <li>list    </li>
+                  <li>min    </li>
+                  <li>max    </li>
+                  <li>step    </li>
+                  <li>formaction    </li>
+                  <li>formenctype    </li>
+                  <li>formmethod    </li>
+                  <li>formtarget    </li>
+                  <li>formnovalidate </li>
+            </ul>
+      </section>
+  </div> 
+  
+    <div class="slide section"> 
+          <header><h1>Attribute Soup</h1></header>
+          <section class="content"> 
+<pre contenteditable>&lt;label for=&quot;name&quot;&gt;Name: &lt;/label&gt; 
+&lt;input id=&quot;name&quot; name=&quot;inputName&quot; 
+  placeholder=&quot;placeholder text&quot; 
+  pattern=&quot;\w{6,9}&quot; 
+  required
+  autofocus
+  type=&quot;text&quot;/&gt;</pre>
+          
+          <form><label for="attributeSoup">Label: </label> 
+		<input id="attributeSoup" name="attributeSoup" class="classed" placeholder="placeholder text" pattern="\w{6,9}" required type="text"/></form>
+  
+  <p><small>Note that the following CSS is used in our live examples:</small></p>
+  
+  <pre contenteditable>input:focus:invalid { background-color: lightPink;}
+input:valid { background-color:lightGreen }
+input:required {border: 2px solid red;}
+input:optional {border: 2px solid green;}</pre>
+          </section>
+          <span class="counter"></span>
+        </div>  
+  
+     <div class="slide">
+      <header>
+         <h1> Other form Elements
+         </h1>
+      </header>
+      <section class="content">
+      <p>New Elements</p>
+          <ul>
+          	<li>&lt;datalist&gt;</li>
+            <li>&lt;output&gt;</li>
+            <li>&lt;meter&gt;</li>
+            <li>&lt;progress&gt;</li>
+            <li>&lt;keygen&gt;</li>
+          </ul>
+      </section>
+  </div> 
+  
+   <div class="slide">
+      	<header><h1>&lt;meter&gt;, &lt;progress&gt; &amp; &lt;output&gt;</h1></header>
+      <section class="content">
+      <pre contenteditable>&lt;meter value=75 min=0 max=100 low=20 high=98&gt;75%&lt;/meter&gt;</pre>
+<p>Gas tank: <meter value="90" min="0" max="100" >90% full</meter> </p>
+<pre contenteditable>&lt;progress&gt;loading...&lt;/progress&gt;</pre>
+<p>Please wait: <progress>loading...</progress> </p>
+<pre contenteditable>&lt;<b>progress</b> value="75" <b>max</b>="100"&gt;75% complete&lt;/<b>progress</b>&gt;</pre>
+<p>Download is: <progress value="75" max="100">75% complete</progress> </p>
+<pre contenteditable>&lt;<b>output</b>&gt;</pre>
+</pre> 
+<ul class="icons" style="margin-top:0;"> 
+  	   <li class="safari half"> Safari</li> 
+       <li class="chrome">Chrome</li>
+       <li class="opera">Opera</li>
+  	   <li class="firefox half">Firefox</li>
+       <li class="ie no">IE</li>
+     </ul></p>
+</section>
+      </div>
+      
+         <div class="slide">
+      <header>
+         <h1>Shameless Self Promotion!
+         </h1>
+      </header>
+      <section class="content">
+      <p><strong class="imp">HTML5: All about Web Forms</strong><br>
+      Time: 1:30pm Friday<br>
+	  Location: Atlantic III <br>
+      By Estelle Weyl (Standardista)</p>
+      </section>
+  </div> 
+  
+  
+  <div class="slide">
+      <header>
+         <h1>Audio &amp; Video</h1>
+      </header>
+      <section class="content" style="margin-top: -20px;">
+          
+            <pre contenteditable>&lt;<strong>audio</strong> id="audio" src="sound.mp3" <strong>controls</strong>&gt;&lt;/audio&gt;<br>document.getElementById("audio").<strong>muted</strong> = false;</pre>
+            <pre contenteditable>&lt;<strong>video</strong> id="video" src="movie.webm" <strong>autoplay</strong> <strong>controls</strong>&gt;&lt;/video&gt;<br>document.getElementById("video").<strong>play</strong>();</pre>
+            <div id="video-column">
+              <input type="button" class="button"  id="reflection-button" onClick="addReflection()" value="Add CSS reflection to video">
+              <video class="video-stream" x-webkit-airplay="allow" data-youtube-id="QH2-TGUlwu4" src="http://o-o.preferred.mia05s03.v3.lscache8.c.youtube.com/videoplayback?sparams=id%2Cexpire%2Cip%2Cipbits%2Citag%2Csource%2Cratebypass%2Ccp&amp;itag=43&amp;ip=64.0.0.0&amp;signature=9A8210B6FDB3C66401AC60A885E3361AAFB41A64.488DCA2163131DCF845F8D4682C2D0E7D4465BBF&amp;sver=3&amp;ratebypass=yes&amp;source=youtube&amp;expire=1322654400&amp;key=yt1&amp;ipbits=8&amp;cp=U0hRR1ZQUl9FSkNOMV9OSlZFOkVSLUlHeml4QXVz&amp;id=407dbe4c6525c2ee"width="390" id="clip" controls="" style="" poster="http://i2.ytimg.com/vi/QH2-TGUlwu4/hqdefault.jpg" ></video>
+               <!--<video width="390" id="clip" controls="" style="" poster="http://i2.ytimg.com/vi/QH2-TGUlwu4/hqdefault.jpg" >
+               <source src="http://v3.lscache8.c.youtube.com/videoplayback?sparams=id%2Cexpire%2Cip%2Cipbits%2Citag%2Cratebypass%2Coc%3AU0hQRlZOT19FSkNOMF9OSFND&amp;itag=43&amp;ip=0.0.0.0&amp;signature=38C8D8BCF90A23376366578C0FD2218735CD75A8.D3A566631CB6FFD10C8441CE9283D5B6E84B04B2&amp;sver=3&amp;ratebypass=yes&amp;expire=1311631200&amp;key=yt1&amp;ipbits=0&amp;id=407dbe4c6525c2ee" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+                <source src="http://v3.lscache8.c.youtube.com/videoplayback?sparams=id%2Cexpire%2Cip%2Cipbits%2Citag%2Cratebypass%2Coc%3AU0hQRlNPUV9FSkNOMF9LSVVD&amp;itag=43&amp;ip=0.0.0.0&amp;signature=87A1F1D3714A30AAFED2F2D16AE49AE0F7262E67.5837A6979117F1565BC57A45498B8C850A21B5A9&amp;sver=3&amp;ratebypass=yes&amp;expire=1311343200&amp;key=yt1&amp;ipbits=0&amp;id=407dbe4c6525c2ee" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+                <source src="http://v3.lscache8.c.youtube.com/videoplayback?sparams=id%2Cexpire%2Cip%2Cipbits%2Citag%2Cratebypass%2Coc%3AU0hQRlNPUV9FSkNOMF9LSVVD&amp;itag=43&amp;ip=0.0.0.0&amp;signature=87A1F1D3714A30AAFED2F2D16AE49AE0F7262E67.5837A6979117F1565BC57A45498B8C850A21B5A9&amp;sver=3&amp;ratebypass=yes&amp;expire=1311343200&amp;key=yt1&amp;ipbits=0&amp;id=407dbe4c6525c2ee" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
+                Your browser does not support the video tag
+              </video>-->
+              <div class="media-buttons">
+                <input type="button" class="button"  id="play-button" onClick="PlayVideo()" ;="" value="Play">
+                <input type="button" class="button"  id="pause-button" onClick="PauseVideo()" ;="" value="Pause" disabled="">
+                <input type="button" class="button"  id="mute" onClick="MuteUnMute()" value="Mute">
+              </div>
+            </div>
+            
+            <div id="audio-column" class="center">
+              <audio id="audio-clip" width="250" controls src="http://files.myopera.com/tagawa/blog/Ode-to-IE6.ogg" type="audio/ogg">
+                Your browser does not support the audio tag
+              </audio>
+              <div class="media-buttons">
+                <input type="button" class="button"  id="audio-play-button" onClick="PlayAudio()" value="Play">
+                <input type="button" class="button"  id="audio-pause-button" onClick="PauseAudio()" value="Pause" disabled="">
+                <input type="button" class="button"  id="audio-mute" onClick="MuteUnMuteAudio()" value="Mute">
+              </div>
+              <p><small><small>Slide JS from <a href="http://www.html5rocks.com">HTML5Rocks</a><br>
+Nyan Cat from  <a href="http://www.youtube.com/watch?v=QH2-TGUlwu4">Saranj00n</a><br><a href="http://my.opera.com/tagawa/blog/ode-to-ie6">Ode to IE6</a><br>
+Buttons from <a href="http://css3button.net/">css3button.net</a></small></small></p>
+            </div>
+          </section>
+    <script defer="">
+            var videoClip = document.getElementById('clip');
+            var playButton = document.getElementById('play-button');
+            var pauseButton = document.getElementById('pause-button');
+
+            function PlayVideo() {
+              videoClip.play();
+              playButton.disabled = true;
+              pauseButton.disabled = false;
+            }
+
+            function PauseVideo() {
+              videoClip.pause();
+              playButton.disabled = false;
+              pauseButton.disabled = true;
+            }
+
+            function MuteUnMute() {
+              document.getElementById('mute').value = videoClip.muted ? 'Mute' : 'Unmute';
+              videoClip.muted = videoClip.muted ? false : true;
+            }
+
+            function OnFinished() {
+              playButton.disabled = false;
+              pauseButton.disabled = true;
+            }
+
+            function addReflection() {
+              videoClip.style.webkitBoxReflect = videoClip.style.webkitBoxReflect !== '' ? '' : "below 0px -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), color-stop(0.55, transparent), to(white))";
+            }
+          </script>
+
+          <script defer="">
+            var audioClip = document.getElementById('audio-clip');
+            var audioPlayButton = document.getElementById('audio-play-button');
+            var audioPauseButton = document.getElementById('audio-pause-button');
+            audioClip.addEventListener('ended', OnAudioFinished, false);
+
+            function PlayAudio() {
+              audioClip.play();
+              audioPlayButton.disabled = true;
+              audioPauseButton.disabled = false;
+            }
+
+            function PauseAudio() {
+              audioClip.pause();
+              audioPlayButton.disabled = false;
+              audioPauseButton.disabled = true;
+            }
+
+            function MuteUnMuteAudio() {
+              document.getElementById('audio-mute').value = audioClip.muted ? 'Mute' : 'Unmute';
+              audioClip.muted = audioClip.muted ? false : true;
+            }
+
+            function OnAudioFinished() {
+              audioPlayButton.disabled = false;
+              audioPauseButton.disabled = true;
+            }
+          </script>
+  </div> 
+  
+  
+  
+     <div class="slide">
+      <header>
+         <h1>&lt;audio&gt;
+         </h1>
+      </header>
+      <section class="content">
+    <div style="float: left;"><p>Attributes</p>
+     <ul>
+     <li>autoplay</li> 
+     <li>preload = none | metadata | auto </li>
+     <li>controls</li>
+     <li>loop</li> 
+     <li>mediagroup = string</li>
+     <li>src (<b>required!</b>)</li>
+     <li>muted?</li>
+     <li>buffer?</li>
+     </ul></div>
+     <p>Children</p>
+     <ul>
+     <li>&lt;track&gt;</li>
+     </ul>
+     
+      </section>
+  </div> 
+  
+    <div class="slide" style="padding:0; overflow:hidden">
+      <object data="http://westciv.com/tools/audio/" style="height: 780px;
+width: 940px;
+overflow:scroll; text-align:center "> 
+             
+     </object> 
+  </div> 
+     <div class="slide">
+      <header>
+         <h1>&lt;video&gt;
+         </h1>
+      </header>
+      <section class="content">
+      <div style="float:left">
+      <p>Attributes</p>
+     <ul>
+     <li>autoplay</li> 
+     <li>preload = none | metadata | auto </li>
+     <li>controls</li>
+     <li>loop</li> 
+     <li><b>poster</b></li>
+     <li>height</li>
+     <li>width</li>
+     <li>muted</li>
+     <li>mediagroup = string</li>
+     <li>src (<b>required!</b>)</li>
+     </ul>
+     </div>
+     <ul>
+     <li>autobuffer?</li>
+     <li>buffer?</li>
+     </ul>
+     <p>Children</p>
+     <ul>
+     <li>&lt;track&gt;</li>
+     </ul
+      ></section>
+  </div> 
+  
+     <div class="slide">
+      <header>
+         <h1>&lt;video&gt; example code
+         </h1>
+      </header>
+      <section class="content">
+      <pre contenteditable>&lt;video loop autoplay controls autobuffer 
+      preload=&quot;metadata&quot; poster=&quot;poster.jpg&quot;&gt;
+&lt;source src=&quot;movie.ogg&quot;  type='video/ogg; codecs="theora, vorbis"'&gt;
+&lt;source src=&quot;movie.mp4&quot; type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;
+&lt;source src=&quot;movie.webm&quot; type='video/webm; codecs="vorbis,vp8"'&gt;
+&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,16,0&quot; width=&quot;320&quot; height=&quot;400&quot;&gt;
+      &lt;param name=&quot;movie&quot; value=&quot;movie.swf&quot;&gt;
+      &lt;param name=&quot;quality&quot; value=&quot;high&quot;&gt;
+      &lt;param name=&quot;menu&quot; value=&quot;true&quot;&gt;
+      &lt;param name=&quot;LOOP&quot; value=&quot;false&quot;&gt;
+        What browser are you using?
+    &lt;/object&gt;
+    &lt;track kind=&quot;caption&quot; src=&quot;captions.srt&quot;/>
+&lt;/video&gt;</pre>
+
+<pre contenteditable>&lt;video src="movie.ogg"&gt;</pre>
+</section>
+</div>
+  
+  <div class="slide" style="padding:0; overflow:hidden">
+      <object data="http://westciv.com/tools/video/" style="height: 780px;
+width: 940px;
+overflow:scroll; text-align:center "> 
+             
+     </object> 
+  </div> 
+  
+    <div class="slide">
+      <header>
+         <h1>&lt;track&gt;
+         </h1>
+      </header>
+      <section class="content">
+        <p> &lt;track&gt; </p>
+        <ul>
+          <li>child of a &lt;video&gt; or &lt;audio&gt; </li>
+          <li>links to a timed track or time-based data. </li>
+          <li>kind = subtitles| captions| descriptions| chapters | metadata, </li>
+          <li>Accessibility</li>
+        </ul>
+        <pre contenteditable>&lt;track kind=captions src=captions.srt&gt;</pre>
+      </section>
+  </div>  
+  
+  
+  
+  
+     <div class="slide">
+      <header>
+         <h1>canvas
+         </h1>
+      </header><object data="http://gyu.que.jp/jscloth/" style="height: 450px;
+width: 500px;
+overflow:scroll; text-align:center; float:right "> 
+             
+     </object> 
+      
+<p style="clear:left; margin: 30px 10px; border:1px solid rgba(255,255,255,0.5); padding: 30px 0; border-width:1px 0;">
+      Very <a href="http://www.standardista.com/html5/html5-introduction-to-canvas">basic canvas tutorial</a></p>
+      <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari</li>
+         <li class="firefox">Firefox</li>
+         <li class="opera ">Opera</li>
+         <li class="ie new">IE 9</li>
+         <li class="txt"><a href="http://code.google.com/p/explorercanvas/">ExplorerCanvas</a> for IE8-</li>
+     </ul>
+  </div> 
+  
+<div class="slide" style="padding:0; overflow:hidden">
+      <object data="http://mbostock.github.com/d3/ex/voronoi.html" style="height: 780px;
+width: 940px;
+overflow:scroll; text-align:center "> 
+             
+     </object> 
+     <header style="position:absolute; top:40px; width: 100%; text-align:center"><h1>SVG</h1></header>
+  </div>      
+  
+     <div class="slide">
+      <header>
+         <h1>WebGL
+         </h1>
+      </header>
+      <section class="content">
+      NOT READY!
+      <ul><li><a href="http://www.chromeexperiments.com/webgl">Chrome WebGL examples</a></li><li>
+     Requires modern video drivers.</li>
+<li>Part of Khronos Group (not  W3C)</li></ul>
+      <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome 8</li>
+         <li class="safari new">Safari 5.1</li>
+         <li class="firefox">Firefox 4</li>
+         <li class="opera new">Opera 12?</li>
+         <li class="ie bad">IE 10</li>
+         <li class="txt">Require hardware</li>
+     </ul> <input type="button" class="button" value="Kill the next slide" 
+     onclick="killwebgl();"/>
+      </section>
+      <script defer>
+	  function killwebgl(){
+		  var el = document.getElementById('webglslide'); 
+		  el.innerHTML = '';
+		  }
+	  </script>
+      </section>
+  </div> 
+  
+  
+  
+  
+   <div class="slide" style="padding:0; overflow:hidden" id="webglslide" >
+      <object data="http://webglsamples.googlecode.com/hg/aquarium/aquarium.html" style="height: 780px;
+width: 940px;
+overflow:scroll; text-align:center "> 
+             
+     </object> 
+  </div> 
+ 
+ 
+ 
+ 
+  
+  
+  
+<!-- ###################################################################   
+
+	    Part 4: JS APIs
+
+     ################################################################### -->    
+    
+   <div class="slide intro">
+      <header>
+         <h1><a href="part4.html">Section 4:</a><br>
+JavaScript APIs</h1>
+         </h1>
+      </header>
+  </div> 
+  
+     <div class="slide">
+      <header>
+         <h1>APIs
+         </h1>
+      </header>
+      <section class="content">
+      <ul>
+      <li>Hashchange event</li>
+      <li>Cross-document messaging </li>
+      <li>Cross-Origin Resource Sharing</li>
+      <li>Geolocation</li>
+      <li>JSON parsing </li>
+      <li>Web Storage - name/value pairs</li>
+      <li>Web Workers</li>
+      <li>File API</li>
+      <li>Web Sockets</li>
+      <li>INdexDB</li>
+      <li>Server-sent DOM events</li>
+      <li>Web Notifications</li>
+      <li>getElementsByClassName</li>
+      <li>classList (DOMTokenList )</li>
+      <li>querySelector/querySelectorAll </li>
+      <li>Touch events </li>
+      </ul>
+      </section>
+  </div> 
+ 
+    
+   <div class="slide intro"> 
+     <header><h1>Thank you</h1></header>
+     <section class="content"> 
+       <p>Estelle Weyl 
+     	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
+     </p>
+            <p><a href="http://standardista.com">www.standardista.com</a></p>
+            <p><a href="http://twitter.com/estellevw">@estellevw</a></p>     
+     </section>
+    </div>   
+   </div>
+   
+  </div>
+ 
+ 
+<!-- ###################################################################   
+
+	    END
+
+     ################################################################### --> 
+<script>
+function vendorPrefix(prefix, id){
+	  var prefixTxt = 'cat';
+		switch (prefix){
+			case 'w':
+				prefixTxt = '-webkit-';
+			break;
+			case 'm':
+				prefixTxt = '-moz-';
+			break;
+			case 'ms':
+				prefixTxt = '-ms-';
+			break;	
+			case 'o':
+				prefixTxt = '-o-';
+			break;
+			case 'r':
+				prefixTxt = '';
+			break;
+		};
+	  var spans = document.getElementById(id).querySelectorAll('u');
+	  for(var i = 0, j = spans.length; i < j; i++ ){
+	  	spans[i].innerHTML = prefixTxt;
+	  }
+			
+	}
+	
+	
+  (function() {
+  var doc = document;
+  var disableBuilds = true;
+
+  var ctr = 0;
+  var spaces = /\s+/, a1 = [''];
+
+  var toArray = function(list) {
+    return Array.prototype.slice.call(list || [], 0);
+  };
+
+  var byId = function(id) {
+    if (typeof id == 'string') { return doc.getElementById(id); }
+    return id;
+  };
+
+  var query = function(query, root) {
+    if (!query) { return []; }
+    if (typeof query != 'string') { return toArray(query); }
+    if (typeof root == 'string') {
+      root = byId(root);
+      if(!root){ return []; }
+    }
+
+    root = root || document;
+    var rootIsDoc = (root.nodeType == 9);
+    var doc = rootIsDoc ? root : (root.ownerDocument || document);
+
+    // rewrite the query to be ID rooted
+    if (!rootIsDoc || ('>~+'.indexOf(query.charAt(0)) >= 0)) {
+      root.id = root.id || ('qUnique' + (ctr++));
+      query = '#' + root.id + ' ' + query;
+    }
+    // don't choke on something like ".yada.yada >"
+    if ('>~+'.indexOf(query.slice(-1)) >= 0) { query += ' *'; }
+
+    return toArray(doc.querySelectorAll(query));
+  };
+
+  var strToArray = function(s) {
+    if (typeof s == 'string' || s instanceof String) {
+      if (s.indexOf(' ') < 0) {
+        a1[0] = s;
+        return a1;
+      } else {
+        return s.split(spaces);
+      }
+    }
+    return s;
+  };
+
+  var addClass = function(node, classStr) {
+    classStr = strToArray(classStr);
+    var cls = ' ' + node.className + ' ';
+    for (var i = 0, len = classStr.length, c; i < len; ++i) {
+      c = classStr[i];
+      if (c && cls.indexOf(' ' + c + ' ') < 0) {
+        cls += c + ' ';
+      }
+    }
+    node.className = cls.trim();
+  };
+
+  var removeClass = function(node, classStr) {
+    var cls;
+    if (classStr !== undefined) {
+      classStr = strToArray(classStr);
+      cls = ' ' + node.className + ' ';
+      for (var i = 0, len = classStr.length; i < len; ++i) {
+        cls = cls.replace(' ' + classStr[i] + ' ', ' ');
+      }
+      cls = cls.trim();
+    } else {
+      cls = '';
+    }
+    if (node.className != cls) {
+      node.className = cls;
+    }
+  };
+
+  var toggleClass = function(node, classStr) {
+    var cls = ' ' + node.className + ' ';
+    if (cls.indexOf(' ' + classStr.trim() + ' ') >= 0) {
+      removeClass(node, classStr);
+    } else {
+      addClass(node, classStr);
+    }
+  };
+
+  var ua = navigator.userAgent;
+  var isFF = parseFloat(ua.split('Firefox/')[1]) || undefined;
+  var isWK = parseFloat(ua.split('WebKit/')[1]) || undefined;
+  var isOpera = parseFloat(ua.split('Opera/')[1]) || undefined;
+
+  var canTransition = (function() {
+  var ver = parseFloat(ua.split('Version/')[1]) || undefined;
+  // test to determine if this browser can handle CSS transitions.
+  var cachedCanTransition = 
+    (isWK || (isFF && isFF > 3.6 ) || (isOpera && ver >= 10.5));
+    return function() { return cachedCanTransition; }
+  })();
+
+  //
+  // Slide class
+  //
+  var Slide = function(node, idx) {
+    this._node = node;
+    if (idx >= 0) {
+      this._count = idx + 1;
+    }
+    if (this._node) {
+      addClass(this._node, 'slide distant-slide');
+    }
+    this._makeCounter();
+    this._makeBuildList();
+  };
+
+  Slide.prototype = {
+    _node: null,
+    _count: 0,
+    _buildList: [],
+    _visited: false,
+    _currentState: '',
+    _states: [ 'distant-slide', 'far-past',
+               'past', 'current', 'future',
+               'far-future', 'distant-slide' ],
+    setState: function(state) {
+      if (typeof state != 'string') {
+        state = this._states[state];
+      }
+      if (state == 'current' && !this._visited) {
+        this._visited = true;
+        this._makeBuildList();
+      }
+      removeClass(this._node, this._states);
+      addClass(this._node, state);
+      this._currentState = state;
+
+      // delay first auto run. Really wish this were in CSS.
+      /*
+      this._runAutos();
+      */
+      var _t = this;
+      setTimeout(function(){ _t._runAutos(); } , 400);
+    },
+    _makeCounter: function() {
+      if(!this._count || !this._node) { return; }
+      var c = doc.createElement('span');
+      c.innerHTML = this._count;
+      c.className = 'counter';
+      this._node.appendChild(c);
+    },
+    _makeBuildList: function() {
+      this._buildList = [];
+      if (disableBuilds) { return; }
+      if (this._node) {
+        this._buildList = query('[data-build] > *', this._node);
+      }
+      this._buildList.forEach(function(el) {
+        addClass(el, 'to-build');
+      });
+    },
+    _runAutos: function() {
+      if (this._currentState != 'current') {
+        return;
+      }
+      // find the next auto, slice it out of the list, and run it
+      var idx = -1;
+      this._buildList.some(function(n, i) {
+        if (n.hasAttribute('data-auto')) {
+          idx = i;
+          return true;
+        }
+        return false;
+      });
+      if (idx >= 0) {
+        var elem = this._buildList.splice(idx, 1)[0];
+        var transitionEnd = isWK ? 'webkitTransitionEnd' : (isFF ? 'mozTransitionEnd' : 'oTransitionEnd');
+        var _t = this;
+        if (canTransition()) {
+          var l = function(evt) {
+            elem.parentNode.removeEventListener(transitionEnd, l, false);
+            _t._runAutos();
+          };
+          elem.parentNode.addEventListener(transitionEnd, l, false);
+          removeClass(elem, 'to-build');
+        } else {
+          setTimeout(function() {
+            removeClass(elem, 'to-build');
+            _t._runAutos();
+          }, 400);
+        }
+      }
+    },
+    buildNext: function() {
+      if (!this._buildList.length) {
+        return false;
+      }
+      removeClass(this._buildList.shift(), 'to-build');
+      return true;
+    },
+  };
+
+  //
+  // SlideShow class
+  //
+  var SlideShow = function(slides) {
+    this._slides = (slides || []).map(function(el, idx) {
+      return new Slide(el, idx);
+    });
+
+    var h = window.location.hash;
+    try {
+      this.current = parseInt(h.split('#slide')[1], 10);
+    }catch (e) { /* squeltch */ }
+    this.current = isNaN(this.current) ? 1 : this.current;
+    var _t = this;
+    doc.addEventListener('keydown', 
+        function(e) { _t.handleKeys(e); }, false);
+    doc.addEventListener('mousewheel', 
+        function(e) { _t.handleWheel(e); }, false);
+    doc.addEventListener('DOMMouseScroll', 
+        function(e) { _t.handleWheel(e); }, false);
+    doc.addEventListener('touchstart', 
+        function(e) { _t.handleTouchStart(e); }, false);
+    doc.addEventListener('touchend', 
+        function(e) { _t.handleTouchEnd(e); }, false);
+    window.addEventListener('popstate',
+        function(e) { _t.go(e.state); }, false);
+    this._update();
+  };
+
+  SlideShow.prototype = {
+    _slides: [],
+    _update: function(dontPush) {
+      document.querySelector('#presentation-counter').innerText = this.current;
+      if (history.pushState) {
+        if (!dontPush) {
+          history.pushState(this.current, 'Slide ' + this.current, '#slide' + this.current);
+        }
+      } else {
+        window.location.hash = 'slide' + this.current;
+      }
+      for (var x = this.current-1; x < this.current + 7; x++) {
+        if (this._slides[x-4]) {
+          this._slides[x-4].setState(Math.max(0, x-this.current));
+        }
+      }
+    },
+
+    current: 0,
+    next: function() {
+      if (!this._slides[this.current-1].buildNext()) {
+        this.current = Math.min(this.current + 1, this._slides.length);
+        this._update();
+      }
+    },
+    prev: function() {
+      this.current = Math.max(this.current-1, 1);
+      this._update();
+    },
+    go: function(num) {
+      if (!num) return;
+      if (history.pushState && this.current != num) {
+        history.replaceState(this.current, 'Slide ' + this.current, '#slide' + this.current);
+      }
+      this.current = num;
+      this._update(true);
+    },
+
+    _notesOn: false,
+    showNotes: function() {
+      var isOn = this._notesOn = !this._notesOn;
+	  console.log(isOn);
+      query('.notes').forEach(function(el) {
+        el.style.display = (isOn) ? 'inline-block' : 'none';
+	    console.log(isOn);
+      });
+    },
+    switch3D: function() {
+      toggleClass(document.body, 'three-d');
+    },
+    handleWheel: function(e) {
+      var delta = 0;
+      if (e.wheelDelta) {
+        delta = e.wheelDelta/120;
+        if (isOpera) {
+          delta = -delta;
+        }
+      } else if (e.detail) {
+        delta = -e.detail/3;
+      }
+
+      if (delta > 0 ) {
+        this.prev();
+        return;
+      }
+      if (delta < 0 ) {
+        this.next();
+        return;
+      }
+    },
+    handleKeys: function(e) {
+      
+      if (/^(input|textarea)$/i.test(e.target.nodeName)) return;
+      
+      switch (e.keyCode) {
+        case 37: // left arrow
+          this.prev(); break;
+        case 39: // right arrow
+        case 32: // space
+          this.next(); break;
+        case 50: // 2
+          this.showNotes(); break;
+        case 51: // 3
+          this.switch3D(); break;
+      }
+    },
+    _touchStartX: 0,
+    handleTouchStart: function(e) {
+      this._touchStartX = e.touches[0].pageX;
+    },
+    handleTouchEnd: function(e) {
+      var delta = this._touchStartX - e.changedTouches[0].pageX;
+      var SWIPE_SIZE = 150;
+      if (delta > SWIPE_SIZE) {
+        this.next();
+      } else if (delta< -SWIPE_SIZE) {
+         this.prev();
+       }
+    },
+  };
+
+  // Initialize
+  var slideshow = new SlideShow(query('.slide'));
+})();
+
+
+  </script>
+  <!--[if lt IE 9]>
+  <script 
+  src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({ mode: "overlay" });</script>
+  <![endif]--> 
+ 
+  </body> 
+</html>

@@ -1,0 +1,1558 @@
+<!doctype html>
+<meta charset="utf-8">
+<html> 
+  <head> 
+    <!--[if gte IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]--> 
+    <!--[if lt IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    <![endif]--> 
+    <meta charset="utf-8" />
+    <title>HTML5 &amp; CSS3: The Good Enough Parts</title>
+    <link href="http://fonts.googleapis.com/css?family=Paytone+One:regular" rel="stylesheet" type="text/css" />
+    
+<link rel="stylesheet" media="print" href="../openwebcamp3/print.css"/>  
+<link rel="stylesheet" media="all" href="../openwebcamp3/screen.css"/>  
+<link rel="stylesheet" media="all" href="../openwebcamp3/effects.css"/>
+<link rel="stylesheet" href="http://standardista.com/cssgradients/css/religion.css"/> 
+
+</head> 
+<body> 
+
+  
+  <div id="info">
+    <p>Estelle Weyl &middot <a href="http://standardista.com">Standardista.com</a> &middot; <a href="http://www.twitter.com/estellevw">@estellevw</a> &middot;Press <span class="key">&rarr;</span> key to advance.  &middot;Press <span class="key">2</span> for notes.
+    </p>
+  </div>
+  
+  <div id="presentation">
+     
+   <div id="presentation-counter"></div>
+      
+   <div id="slides">
+   
+    
+    
+   
+    <div class="slide intro">
+     <header>
+      <h1>HTML5 &amp; CSS3:<br>
+		  the Good Enough Parts</h1>
+      <p>Estelle Weyl 
+     	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
+     </p>
+     <p>
+     	<a href="http://standardista.com">www.standardista.com</a><br>
+        <a href="http://twitter.com/estellevw">@estellevw</a>
+     </p>  
+     </header>
+    </div>   
+    
+    <div class="slide intro">
+     <header style="font-size:30px">
+      <h1>Part 1: CSS3 Snow</h1>
+      <h1>Part 2: CSS3 Other features</h1>
+      <h1>Part 3: HTML5</h1>
+      <h1><b>&rarr;Part 4: APIs&larr;</b></h1>
+     </header>
+    </div> 
+    
+  <div class="slide" id="components">
+      <section class="content">
+      <div class="col">
+      <div class="even">
+      <p>CSS</p>
+      <ul>
+        <li class="done">@font-face Web fonts</li>
+        <li class="done">calc() in CSS</li>
+        <li class="done">Generated content</li>
+        <li class="done">Gradients</li>
+        <li class="done">display values</li>
+        <li class="done">Mulitiple backgrounds</li>
+        <li class="done">background image properties</li>
+        <li class="done">Border images</li>
+        <li class="done">Border-radius </li>
+        <li class="done">Box-shadow</li>
+        <li class="done">Box-sizing</li>
+        <li class="done">New Colors</li>
+        <li class="done">Alphatransparency</li>
+        <li class="done">Media Queries</li>
+        <li class="done">Multiple column layout</li>
+        <li>object-fit/object-position</li>
+        <li class="done">Opacity</li>
+        <li class="done">CSS3 selectors</li>
+        <li class="done">Text-shadow</li>
+        <li class="done">Transforms</li>
+        <li class="done">Transitions</li>
+        <li class="done"> 3D Transforms</li>
+        <li class="done"> Animation</li>
+        <li class="done">Word-wrap</li>
+        <li class="done">Flexible Box Layout Module</li>
+        <li class="done">Grid Layout</li>
+        <li class="done">rem (root em) units</li>
+        <li>Masks</li>
+        <li>Reflections</li>
+        <li>text-stroke</li>
+        <li class="done">
+        Text-overflow</li>
+        </ul>
+        </div>
+        </div>
+        <div class="col">
+        <div>
+        <p>
+        HTML5</p>
+        <ul>
+        <li class="done">Semantic elements</li>
+        <li class="done">Audio element</li>
+        <li class="done">Canvas</li>
+        <li class="done">contenteditable attribute</li>
+        <li class="done">dataset &amp; data-* attributes</li>
+        <li class="done">Details &amp; Summary elements</li>
+        <li class="yes">Drag and Drop</li>
+        <li class="done">HTML5 form features</li>
+        <li class="done">Form validation</li>
+        <li>Datalist element</li>
+        <li class="done">Progress &amp; Meter</li>
+        <li class="done">New semantic elements</li>
+        <li class="yes">Offline web applications</li>
+        <li class="done">Ruby annotation</li>
+        <li class="yes">Session history management</li>
+        <li>Text API for Canvas</li>
+        <li>Toolbar/context menu</li>
+        <li class="done">Video element</li>
+        <li class="done">WebGL - 3D Canvas graphics</li>
+        </ul>
+        </div>
+        <div class="even" style="border-bottom-left-radius:0; border-bottom-right-radius:0;">
+        <p>JS API</p>
+        <ul>
+        <li>Cross-document messaging</li>
+        <li>Cross-Origin Resource Sharing</li>
+        <li class="yes">File API</li>
+        <li class="yes">Geolocation</li>
+        <li class="yes">Hashchange event</li>
+        <li class="yes">IndexedDB</li>
+        <li>JSON parsing</li>
+        </ul>
+        </div>
+        
+        </div>
+        <div class="col">
+        <div class="even" style="border-top-left-radius:0; border-top-right-radius:0;">
+        <ul>
+        <li>Server-sent DOM events</li>
+        <li class="yes">Web Notifications</li>
+        <li class="yes">Web Sockets</li>
+        <li class="yes">Web Storage</li>
+        <li class="yes">Web Workers</li>
+        <li>Stream API</li>
+        <li class="yes">Web SQL Database</li>
+        <li class="done">SVG</li>
+        </ul>
+        </div>
+        <div>
+        <p>
+        Other</p>
+        <ul><li class="yes">
+        classList (DOMTokenList )</li><li>
+        Data URLs</li><li class="yes">
+        getElementsByClassName</li><li>
+        MathML</li>
+        <li class="done">
+        MPEG-4/H.264/WebM/VP8/Ogg/Theora video formats</li><li>
+        querySelector/querySelectorAll</li><li>
+        Touch events</li><li class="done">
+        WAI-ARIA Accessibility features</li>
+        <li class="done">
+        Font Formats</li><li>
+        XHTML served as application/xhtml+xml</li><li>
+        XMLHttpRequest 2</li><li>
+        XHTML+SMIL animation</li>
+      </ul>
+      </div>
+      </div>
+      </section>
+  </div> 
+  
+  
+  
+    
+    
+    
+     
+ 
+  
+<!-- ###################################################################   
+
+	    Part 4: JS APIs
+
+     ################################################################### -->    
+    
+   <div class="slide intro">
+      <header>
+         <h1><b>Part 4:</b><br>
+JavaScript APIs</h1>
+         </h1>
+      </header>
+  </div> 
+  
+     <div class="slide">
+      <header>
+         <h1>JavaScript APIs
+         </h1>
+      </header>
+      <section class="content columns2">
+      <ul>
+      <li>Offline web apps</li>
+	  <li>Web Storage</li>
+	  <li>Indexed dataBase</li>
+      <li>Geolocation</li>
+      <li>Session history </li>
+      <li>Drag and Drop</li>
+      <li style="opacity: 0.3;">JSON parsing </li>
+      <li>File API</li>
+      <li>Web Workers</li>
+      <li style="opacity: 0.3;">Web Sockets</li>
+      <li style="opacity: 0.3;">Server events</li>
+      <li style="opacity: 0.3;">Web Notifications</li>
+      <li>getElementsByClassName</li>
+      <li style="opacity: 0.3;">classList (DOMTokenList)</li>
+      <li>querySelector/querySelectorAll </li>
+      <li style="opacity: 0.3;">Hashchange event</li>
+      <li style="opacity: 0.3;">Cross-document messaging </li>
+      <li style="opacity: 0.3;">Cross-Origin Resource Sharing</li>
+      <li style="opacity: 0.3;">Touch events </li>
+      <li style="opacity: 0.3;">Toolbar/context menu</li>
+      </ul>
+      </section>
+  </div> 
+  
+  
+    <div class="slide">
+      <header>
+         <h1>Offline Web Applications
+         </h1>
+      </header>
+     
+      <section class="content">
+      <pre contenteditable>&lt;!doctype HTML&gt;<br>&lt;html manifest=&quot;cache.manifest&quot;&gt;<br>&lt;meta charset=&quot;utf-8&quot;/&gt;<br>&lt;title&gt;...</pre>
+      <pre contenteditable>CACHE MANIFEST
+#version01
+
+#files that explicitly cached
+CACHE:
+index.html
+css/styles.css
+scripts/application.js
+
+#Resources requiring connectivity
+NETWORK:
+signin.php
+dosomething.cgi</pre>
+      <ul class="icons" style="clear: both;">
+        <li class="chrome">Chrome 8</li>
+        <li class="safari new">Safari 5.1</li>
+        <li class="firefox">Firefox 4</li>
+        <li class="opera new">Opera 12?</li>
+        <li class="ie bad">IE 10</li>
+        <li class="txt">Require hardware</li>
+      </ul>
+    </section>
+  </div>  
+  
+  
+    <div class="slide">
+      <header>
+         <h1>ApplicationCache
+         </h1>
+      </header>
+      <section class="content">
+      <p>Add to .htaccess file</p>
+      <pre contenteditable>AddType text/cache-manifest manifest</pre>
+      <pre contenteditable>if(window.applicationCache){
+ var appCache = window.applicationCache; 
+ appCache.update();
+ if (appCache.status == appCache.UPDATEREADY ){ 
+      appCache.swapCache();
+ }
+}</pre>
+      </section>
+  </div>  
+  
+  
+  
+  <div class="slide" id="web-storage"> 
+          
+          <header> <h1>localStorage</h1></header> 
+          <section> 
+<pre contenteditable> 
+saveButton.addEventListener('click', function () {
+  window.<b>localStorage</b>.<b>setItem</b>('value', textarea.value);
+}, false);
+textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
+</pre> 
+            <p id="localstorage-message">Save text value on the client side (crash-safe)</p> 
+            <textarea id="ls" placeholder="Type your text here..."></textarea> 
+            <input type="button" value="save" id="savelocalstorage" class="button"/>
+            <input type=button id="savelocalstorage" class="button" onClick="window.open('localstorageiframe.html', 'ls', 'width=200,height=200')" value="Open Test"/> 
+            <p id="lsLog"></p>
+           
+ <pre contenteditable>	var el = document.querySelector('#myID');
+	// place content from local storage on load if there is one
+	el.innerHTML = window.localStorage.getItem('value');</pre> 
+<script defer> 
+  (function(){
+	// if local storage not supported, quit
+	try {
+	  (window.localStorage.getItem) 
+	} catch(e){
+	  return; 
+	}
+
+	var textarea = document.querySelector('#ls');
+	
+	
+	// place content from local storage on load if there is one
+	if (!textarea.value) {
+	  textarea.value = window.localStorage.getItem('value');
+	}
+	
+	updateLog(false);
+	
+	
+	// your content will be saved locally
+	document.querySelector('#savelocalstorage').addEventListener('click', function () {
+	  window.localStorage.setItem('value', textarea.value);
+	  window.localStorage.setItem('timestamp', (new Date()).getTime());
+	  updateLog(true);
+	}, false);
+
+	function updateLog(new_save) {
+	  var log = document.querySelector("#lsLog");
+	  var delta = 0;
+	  if (window.localStorage.getItem('value')) {
+		delta = ((new Date()).getTime() - (new Date()).setTime(window.localStorage.getItem('timestamp'))) / 1000;
+		if (new_save) {
+		  log.textContent = 'Saved. Content will be available after browser refresh/reopen.';
+		  setTimeout(function() {
+			log.textContent = '';
+		  }, 3000);
+		} else {
+		  log.textContent = 'last saved: ' + delta + 's ago';
+		}
+	  }
+	}
+
+  })();  
+</script> 
+</section> 
+        </div> 
+  
+     <div class="slide">
+      <header>
+         <h1>Session Storage
+         </h1>
+      </header>
+      <section class="content">
+<ul>
+<li>use localStorage for persistent storage</li>
+<li>use sessionStorage for per tab storage</li>
+</ul>
+<p class="notes">Chrome: view storage: Inspector > Local Storage </p>
+<ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari</li>
+         <li class="firefox">Firefox</li>
+         <li class="opera">Opera</li>
+         <li class="ie">IE 8</li>
+         <li class="txt">Well Supported!</li>
+     </ul>
+      </section>
+  </div> 
+  
+  
+  
+  
+  
+     <div class="slide">
+      
+          <header><h1>Web SQL</h1></header>
+          <section>
+<pre contenteditable>var db = window.<b>openDatabase</b>("DBName", "1.0", "description", 5*1024*1024); 
+  db.<b>transaction</b>(function(tx) {
+  tx.<b>executeSql</b>(<em>"SELECT * FROM test"</em>, [ ], successCallback, errorCallback);
+});
+
+</pre>
+
+          <div class="center" id="websqldb-example">
+            <input type="text" id="todoitem" />
+            <input type="button" class="button" onClick="webSqlSample.newRecord()" value="New Item"/>
+            <input type="button" class="button" onClick="webSqlSample.createTable()" value="create table"/>
+            <input type="button" class="button" onClick="webSqlSample.dropTable()" value="drop table"/>
+            <p class="notes">ChromeView your database: Inspector > Resources > Databases</p>
+
+            <ul class="record-list" id="db-results"></ul>
+            <div id="db-log"></div>
+          </div>
+          
+          <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari</li>
+         <li class="firefox bad">Firefox</li>
+         <li class="opera">Opera</li>
+         <li class="ie bad">IE 8</li>
+         <li class="txt">Well Supported!</li>
+     </ul>
+          <script defer>
+		  /* Code from HTML5Rocks.com */
+            var webSqlSample = (function() {
+              var db;
+              var log = document.getElementById('db-log');
+              if (window.openDatabase) {
+                db = openDatabase("DBTest", "1.0", "HTML5 Database API example", 200000);
+                showRecords();  
+              }
+              document.getElementById('db-results').addEventListener('click', function(e) { e.preventDefault(); }, false);
+
+              function onError(tx, error) {
+                log.innerHTML = '<p class="error">Error: ' + error.message + '</p>';
+              }
+
+              // select all records and display them
+              function showRecords() {
+                document.getElementById('db-results').innerHTML = '';
+                db.transaction(function(tx) {
+                  tx.executeSql("SELECT * FROM testTable", [], function(tx, result) {
+                    for (var i = 0, item = null; i < result.rows.length; i++) {
+                      item = result.rows.item(i);
+                      document.getElementById('db-results').innerHTML += 
+                          '<li><span contenteditable="true" onkeyup="webSqlSample.updateRecord('+item['id']+', this)">'+
+                          item['text'] + '</span> <a href="#" onclick="webSqlSample.deleteRecord('+item['id']+')">[Delete]</a></li>';
+                    }
+                  });
+                });
+              }
+
+              function createTable() {
+                db.transaction(function(tx) {
+                  tx.executeSql("CREATE TABLE testTable (id REAL UNIQUE, text TEXT)", [],
+                      function(tx) {  log.innerHTML = '<p>"testTable" created!</p>' },
+                      onError);
+                });
+              }
+
+              // add record with random values
+              function newRecord() {
+                var num = Math.round(Math.random() * 10000); // random data
+                db.transaction(function(tx) {
+                  tx.executeSql("INSERT INTO testTable (id, text) VALUES (?, ?)", [num, document.querySelector('#todoitem').value],
+                      function(tx, result) {
+                        log.innerHTML = '';
+                        showRecords();
+                      }, 
+                      onError);
+                });
+              }
+
+              function updateRecord(id, textEl) {
+                db.transaction(function(tx) {
+                  tx.executeSql("UPDATE testTable SET text = ? WHERE id = ?", [textEl.innerHTML, id], null, onError);
+                });
+              }
+
+              function deleteRecord(id) {
+                db.transaction(function(tx) {
+                  tx.executeSql("DELETE FROM testTable WHERE id=?", [id],
+                      function(tx, result) { showRecords() }, 
+                      onError);
+                });
+              }
+
+              // delete table from db
+              function dropTable() {
+                db.transaction(function(tx) {
+                  tx.executeSql("DROP TABLE testTable", [],
+                      function(tx) { showRecords() }, 
+                      onError);
+                });
+              }
+              
+              return {
+                newRecord: newRecord,
+                createTable: createTable,
+                updateRecord: updateRecord,
+                deleteRecord: deleteRecord,
+                dropTable: dropTable
+              }
+            })();
+          </script>
+      </section>
+  </div> 
+  
+  
+<div class="slide" id="indexed-db">
+          <header><h1>Index dB</h1></header>
+          <section>
+<pre contenteditable>var indexDatabase = window.<b>indexedDB</b>.<b>open</b>('Database Name');
+indexDatabase.onsuccess = function(event) {
+  <b>var db = event.srcElement.result</b>;
+  var transaction = db.<b>transaction</b>([], <b>IDBTransaction.READ_ONLY</b>);
+  var currRequest = transaction.<b>objectStore</b>('ObjectStore Name').<b>openCursor</b>();
+  currRequest.<b>onsuccess</b> = ...;
+};
+
+</pre>
+          <div class="center" id="indexeddb-example">
+            <input type="text" placeholder="key" id="idb-key" size="10" /> <input type="text" placeholder="value" id="idb-value" size="15" />
+            <input type="button" class="button" onClick="indexedDbSample.idbSet()" value="New Entry"/>
+            <input type="button" class="button" onClick="indexedDbSample.idbCreate()" value="Create dB"/>
+            <input type="button" class="button" onClick="indexedDbSample.idbRemove()" value="Delete dB"/>
+            <div id="idb-log"></div>
+
+            <div class="record-list" id="idb-results-wrapper"></div>
+            <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome 11</li>
+         <li class="safari bad">Safari</li>
+         <li class="firefox">Firefox 4</li>
+         <li class="opera bad">Opera</li>
+         <li class="ie bad">IE 10</li>
+         <li class="txt"></li>
+     </ul>
+          </div>
+          <script defer>
+            var indexedDbSample = (function() {
+              var idb_;
+              var idbRequest_;
+              var idbLog_ = document.getElementById('idb-log');
+              var idResultsWrapper_ = document.getElementById('idb-results-wrapper');
+
+              // IndexedDB spec is still evolving, various browsers keep it
+              // behind various flags and implementation varies.
+              if ('webkitIndexedDB' in window) {
+                window.indexedDB = window.webkitIndexedDB;
+                window.IDBTransaction = window.webkitIDBTransaction;
+              } else if ('moz_indexedDB' in window) {
+                window.indexedDB = window.moz_indexedDB;
+              }
+
+              // Open our IndexedDB if the browser supports it.
+              if (window.indexedDB) {
+                idbRequest_ = window.indexedDB.open("Test", "A test object store.");
+                idbRequest_.onerror = idbError_;
+                idbRequest_.addEventListener('success', function(event) {
+                  idb_ = event.srcElement.result;
+                  idbShow_(event);
+                }, false);
+              }
+
+              function idbError_(event) {
+                idbLog_.innerHTML += '<p class="error">Error: ' +
+                                     event.message + ' (' + event.code + ')</p>';
+              }
+
+              function idbShow_(event) {
+                if (!idb_.objectStoreNames.contains('myObjectStore')) {
+                  idbLog_.innerHTML = "<p>Object store not yet created.</p>";
+                  return;
+                }
+
+                var html = [];
+                var transaction = idb_.transaction([], IDBTransaction.READ_ONLY); // Read is default.
+                var request = transaction.objectStore('myObjectStore').openCursor(); // Get all results.
+
+                // This callback will continue to be called until we have no more results.
+                request.onsuccess = function(e) {
+                  var cursor = e.srcElement.result;
+                  if (!cursor) {
+                    idResultsWrapper_.innerHTML = '<ul class="record-list" id="idb-results">' + html.join('') + '</ul>';
+                    return;
+                  }
+                  html.push('<li><span class="keyval" contenteditable onblur="indexedDbSample.updateKey(\'',
+                            cursor.key, '\', this)">', cursor.key, '</span> ',
+                            '=> <span class="keyval" contenteditable onblur="indexedDbSample.updateValue(\'',
+                            cursor.key, '\', this)">', cursor.value, '</span>&nbsp; ',
+                            '<a href="javascript:void(0)" onclick="indexedDbSample.deleteKey(\'',
+                            cursor.key, '\')">[Delete]</a></li>');
+                  cursor.continue();
+                }
+                request.onerror = idbError_;
+              }
+
+              function idbCreate_() {
+                if (!idb_) {
+                  if (idbRequest_) {
+                    idbRequest_.addEventListener('success', removeObjectStore, false); // If indexedDB is still opening, just queue this up.
+                  }
+                  return;
+                }
+
+                var request = idb_.setVersion('the new version string');
+                request.onerror = idbError_;
+                request.onsuccess = function(e) {
+                  if (!idb_.objectStoreNames.contains('myObjectStore')) {
+                    try {
+                      var objectStore = idb_.createObjectStore('myObjectStore', null); // FF is requiring the 2nd keyPath arg. It can be optional :(
+                      idbLog_.innerHTML = "<p>Object store created.</p>";
+                    } catch (err) {
+                      idbLog_.innerHTML = '<p class="error">' + err.toString() + '</p>';
+                    }
+                  } else {
+                    idbLog_.innerHTML = '<p class="error">Object store already exists.</p>';
+                  }
+                }
+              }
+
+              function idbSet_() {
+                if (!idb_) {
+                  if (idbRequest_) {
+                    idbRequest_.addEventListener('success', removeObjectStore, false); // If indexedDB is still opening, just queue this up.
+                  }
+                  return;
+                }
+
+                if (!idb_.objectStoreNames.contains('myObjectStore')) {
+                  idbLog_.innerHTML = "<p class=\"error\">Object store doesn't exist.</p>";
+                  return;
+                }
+
+                 // Create a transaction that locks the world.
+                var objectStore = idb_.transaction([], IDBTransaction.READ_WRITE)
+                                      .objectStore("myObjectStore");
+                var request = objectStore.put(
+                    document.getElementById('idb-value').value,
+                    document.getElementById('idb-key').value);
+                request.onerror = idbError_;
+                request.onsuccess = idbShow_;
+              }
+
+              function updateKey_(key, element) {
+                var newKey = element.textContent;
+                var transaction = idb_.transaction([], IDBTransaction.READ_WRITE); // Create a transaction that locks the world.
+                var objectStore = transaction.objectStore("myObjectStore");
+                var request = objectStore.get(key);
+                request.onerror = idbError_;
+                request.onsuccess = function(event) {
+                  var value = event.srcElement.result;
+                  if (objectStore.delete) {
+                    var request = objectStore.delete(key);
+                  } else {
+                    var request = objectStore.remove(key);
+                  }
+                  request.onerror = idbError_;
+                  request.onsuccess = function(event) {
+                    var request = objectStore.add(value, newKey);
+                    request.onerror = idbError_;
+                    request.onsuccess = idbShow_;
+                  };
+                };
+              }
+
+              function updateValue_(key, element) {
+                var transaction = idb_.transaction([], IDBTransaction.READ_WRITE); // Create a transaction that locks the world.
+                var objectStore = transaction.objectStore("myObjectStore");
+                var request = objectStore.put(element.textContent, key);
+                request.onerror = idbError_;
+                request.onsuccess = idbShow_;
+              }
+
+              function deleteKey_(key) {
+                var transaction = idb_.transaction([], IDBTransaction.READ_WRITE); // Create a transaction that locks the world.
+                var objectStore = transaction.objectStore("myObjectStore");
+                if (objectStore.delete) {
+                  var request = objectStore.delete(key);
+                } else {
+                  var request = objectStore.remove(key);
+                }
+                request.onerror = idbError_;
+                request.onsuccess = idbShow_;
+              }
+
+              function idbRemove_() {
+                if (!idb_) {
+                  if (idbRequest_) {
+                    idbRequest_.addEventListener('success', removeObjectStore, false); // If indexedDB is still opening, just queue this up.
+                  }
+                  return;
+                }
+
+                var request = idb_.setVersion("the new version string");
+                request.onerror = idbError_;
+                request.onsuccess = function(event) {
+
+                  if (idb_.objectStoreNames.contains('myObjectStore')) {
+                    try {
+                      // Spec has been updated to deleteObjectStore.
+                      if (idb_.deleteObjectStore) {
+                        idb_.deleteObjectStore('myObjectStore');
+                      } else {
+                        idb_.removeObjectStore('myObjectStore');
+                      }
+                      idResultsWrapper_.innerHTML = '';
+                      idbLog_.innerHTML = "<p>Object store removed.</p>";
+                    } catch (err) {
+                      idbLog_.innerHTML = '<p class="error">' + err.toString() + '</p>';
+                    }
+                  } else {
+                    idbLog_.innerHTML = "<p class=\"error\">Object store doesn't exist.</p>";
+                  }
+                };
+              }
+
+              return {
+                idbSet: idbSet_,
+                idbCreate: idbCreate_,
+                idbRemove: idbRemove_,
+                updateKey: updateKey_,
+                updateValue: updateValue_,
+                deleteKey: deleteKey_
+              }
+            })();
+          </script>
+        </section>
+      </div>
+  
+  
+  
+<div class="slide" id="geolocation">
+	<header>
+         <h1>Geolocation</h1>
+    </header>
+
+      <section>
+      <pre contenteditable>function getLocation(){
+  if (<b>navigator.geolocation</b>) {
+  	  navigator.geolocation.<b>getCurrentPosition</b>(success, error);
+	  console.log('got position');
+	} else {
+	  error('not supported');
+	}
+}
+function error(text){
+	text = text || 'failed';
+	console.log(text); 
+ }
+function success(location){
+	 var lat = location.<b>coords.latitude</b>;
+	 var long = location.<b>coords.longitude</b>;
+	 var url = "http://maps.google.com/maps?q="+ lat+","+long; <input type="button" class="button" value="Get Map" onClick="getLocation();"/>
+}</pre>
+<ul class="icons" style="clear: both;">
+     <li class="chrome">Chrome 4</li>
+     <li class="safari">Safari 5</li>
+     <li class="firefox">Firefox 3.5 </li>
+     <li class="opera ">Opera 10.6</li>
+     <li class="ie new">IE 9</li>
+ </ul>
+<script defer>
+function getLocation(){
+  if (navigator.geolocation) {
+  	  navigator.geolocation.getCurrentPosition(success, error);
+	} else {
+	  error('not supported');
+	}
+}
+
+ function error(text){
+	text = text || 'failed';
+	console.log(text); 
+ }
+ function success(location){
+	  console.log(location);
+	 var lat = location.coords.latitude;
+	 var long = location.coords.longitude;
+	 var url = "http://maps.google.com/maps?q="+ lat+","+long;
+	// url = "http://maps.google.com/maps?q="+ lat+","+ long + "&amp;ie=UTF8&amp;ll=" + lat + ","+ long +"&amp;spn=0.012738,0.01663&amp;z=14&amp;output=embed"
+	 console.log(url);
+	 window.open(url, 'map', "width=600,height=600");
+ }
+
+</script>
+  </section>
+</div>
+
+
+   <div class="slide">
+      <header>
+         <h1>History API
+         </h1><p>Load data &amp;  change browser address bar (without reloading)</p>
+      </header>
+      <section class="content">
+<pre contenteditable>
+window.history.<b>pushState(data, title, url)</b> 
+<span class="notes">/* Pushes data into history, with title, and, if provided, the URL.*/<br>
+</span>
+window.history.<b>replaceState(data, title, url)</b> 
+<span class="notes">/* Updates current history entry to given data, with title, and, if provided, URL */</span></pre>
+       
+<pre contenteditable>window.history.<b>length</b> <span class="notes">/* number of entries in session history */</span>
+
+window.history.<b>state</b> <span class="notes">/* current state */</span>
+
+window.history.go( &Delta; )</b> <span class="notes">/*  back or forward &Delta; steps */</span>
+
+window.history.<b>back()</b> <span class="notes">/* Goes back one step &Delta;== -1*/</span>
+
+window.history.<b>forward()</b> <span class="notes">/* Goes forward one step &Delta; = 1*/</span></pre>
+       </pre>
+      </section>
+  </div> 
+
+
+  
+<div class="slide">
+  <header>
+     <h1>Drag and Drop</h1>
+  </header>
+  <section class="content">
+<pre contenteditable>document.addEventListener(<em>'dragstart'</em>, function(event) {
+  event.<b>dataTransfer.setData</b>('text', 'Customized text');
+  event.<b>dataTransfer.effectAllowed</b> = 'copy';
+}, false);
+</pre>
+            <ul id="drag-zone">
+              <li><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="width: 160px" draggable></li>
+              <li><p draggable contenteditable>Drag this text or the image above to the right. You can even change this text. </p></li>
+            </ul>
+            <pre id="drop-zone">Drop Area</pre>
+            <div id="drop-data"></div>
+            <script defer>
+            (function() {
+              var dragZone = document.getElementById('drag-zone');
+              var dropZone = document.getElementById('drop-zone');
+              dragZone.addEventListener('dragstart', function(event) {
+                if (event.target.className) { 
+                  event.target.style.border = "1px solid #888";
+                }
+                return true;
+              }, true);
+              dragZone.addEventListener('dragend', function(event) {
+                if (event.target.className) { // img case
+                  event.target.style.border = "1px solid #888";
+                }
+                else { // text case
+                  event.target.parentNode.style.border = "1px solid #888";
+                }
+                return true;
+              }, true);
+              dropZone.addEventListener('dragenter', function(event) {
+                if (event.preventDefault) event.preventDefault();
+                event.dataTransfer.dropEffect = 'copy';
+                this.className = 'hovering';
+                return false;
+              }, false);
+              dropZone.addEventListener('dragover', function(event) {
+                if (event.preventDefault) event.preventDefault(); // allows us to drop
+                event.dataTransfer.dropEffect = 'copy';
+                return false;
+              }, false);
+              dropZone.addEventListener('dragleave', function(event) {
+                if (event.preventDefault) event.preventDefault(); // allows us to drop
+                this.className = '';
+                return false;
+              }, false);
+              dropZone.addEventListener('drop', function(event) {
+                if (event.preventDefault) event.preventDefault();
+                var imgPassed = null;
+                var dropdata = document.querySelector('#drop-data');
+                var types = event.dataTransfer.types;
+                document.querySelector('#drop-data').textContent = '';
+                this.innerHTML = '';
+                for (var i = 0; i < types.length; i++) {
+                  if (types[i] == 'Files') {
+                    var files = event.dataTransfer.files;
+                    for (var j = 0; j < files.length; j++) {
+                      dropdata.textContent += 'File Name: '+files[j].fileName;
+                      dropdata.textContent += 'File Size: '+files[j].fileSize;
+                    }
+                  }
+                  else {
+                    if (typeof event.dataTransfer.getData(types[i]) !== 'undefined') {
+                      dropdata.innerHTML += '<p><em class="datatypes">'+types[i]+'</em>: <br />'+event.dataTransfer.getData(types[i]).replace(/</g, '&lt;') + '</p>';
+                    }
+                  }
+
+                  if (types[i] == 'text/uri-list') {
+                    imgPassed = event.dataTransfer.getData('text/uri-list');
+                  }
+                }
+                if (imgPassed) {
+                  var cEl = document.createElement('canvas');
+                  cEl.width = 120;
+                  cEl.height = 180;
+                  var ctx = cEl.getContext('2d');
+                  var img_buffer = document.createElement('img');
+                  img_buffer.src = imgPassed;
+                  img_buffer.style.display = 'none';
+                  document.body.appendChild(img_buffer); // this line only needed in safari
+                  img_buffer.onload = function() { ctx.drawImage(img_buffer,0,0,100,140); }
+                  this.appendChild(cEl);
+                } else {
+                  if (event.dataTransfer.getData('text')) {
+                    this.innerHTML = event.dataTransfer.getData('text');
+                  }
+                  else if (event.dataTransfer.getData('text/plain')) {
+                    this.innerHTML = event.dataTransfer.getData('text/plain');
+                  }
+                }
+                return false;
+              }, false);
+            })();
+            </script>
+          
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ul class="icons" style="clear: none;">
+     <li class="chrome">Chrome 8</li>
+     <li class="safari">Safari</li>
+     <li class="firefox">Firefox 3.5 </li>
+     <li class="opera bad">Opera 12?</li>
+     <li class="ie">IE</li>
+     <li class="txt">mobile: only Android</li>
+ </ul>
+  </section>
+</div> 
+  
+
+
+     <div class="slide">
+      <header>
+         <h1>File API</h1>
+      </header>
+      <section class="content">
+        <ul>
+          <li>Import from the filesystem or the web.</li>
+          <li>Create new files from scratch.</li>
+          <li>Manipulate existing file data.</li>
+          <li>Store file data on the client.</li>
+          <li>Publish files back to the web.</li>
+        </ul>
+        <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome 6</li>
+         <li class="safari bad">Safari</li>
+         <li class="firefox">Firefox 3.6 </li>
+         <li class="opera">Opera 11.1</li>
+         <li class="ie new">IE 10</li>
+         <li class="txt">mobile: only Android</li>
+     </ul>
+        <p>Tutorial: <a href="http://www.htmlfivewow.com/">Talk from Google I/O</a></p>
+      </section>
+  </div> 
+  
+  
+  <div class="slide">
+      <header>
+         <h1>File API</h1>
+      </header>
+      <section class="content"> 
+<pre contenteditable>  &lt;input type="file" id="files" accept="image/*" multiple&gt;
+document.querySelector('#files').onchange = function(e) {
+  var files = e.target.files; // FileList of File objects.
+
+  for (var i = 0, f; f = files[i]; ++i) {
+    console.log(f.name, f.type, f.size,
+                f.lastModifiedDate.toLocaleDateString());
+  }
+}; </pre>
+<p>
+      <input type="file" id="filereader-files" class="hidden-input" multiple accept="image/*">
+      <input type=button id="file-select" class="button" value="Select image files">  </p>
+      <pre contenteditable><output id="filereader-list"></output></pre>
+  
+<div><output id="filereader-list"></output></div>
+<script>
+/*******************************************************************************
+ * FILEREADER - from Google
+ ******************************************************************************/
+document.querySelector('#file-select').addEventListener('click', function(e) {
+  document.querySelector('#filereader-files').click();
+}, false);
+
+document.querySelector('#filereader-files').onchange = function(e) {
+  var files = e.target.files; // FileList
+
+  var output = [];
+  for (var i = 0, f; f = files[i]; ++i) {
+    output.push('<li><b>', f.name, '</b> (',
+        f.type || 'n/a', ') - ', f.size, ' bytes, last modified: ',
+        f.lastModifiedDate.toLocaleDateString(), '</li>');
+  }
+  document.querySelector('#filereader-list').innerHTML =
+      '' + output.join('') + '<br/>';
+};
+</script>
+  </section>
+  </div>
+  
+  
+     <div class="slide">
+      <header>
+         <h1>Web Workers
+         </h1>
+      </header>
+      <section class="content">
+      <p>Create additional javascript threads to run scripts in the background.</p>
+      <ul>
+      	<li>No access to DOM</li>
+        <li>Allows UI thread to continue</li>
+      </ul>
+      </section>
+  </div> 
+  
+       <div class="slide">
+      <header>
+         <h1>Web Sockets
+         </h1>
+      </header>
+      <section class="content">
+<ul><li>Full-duplex, bi-directional communication.</li>
+<li>Both server and client can send data at any time or same time</li>
+<li>Only  data  is sent, without HTTP headers (reduces bandwidth.</li>
+</ul>
+      </section>
+  </div> 
+  
+   <div class="slide">
+  <header>
+     <h1>JS Events and Methods
+     </h1>
+  </header>
+  <section class="content">
+ <pre contenteditable>var elements = document.getElementsByClassName(className)</pre>
+ <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome 6</li>
+         <li class="safari">Safari</li>
+         <li class="firefox">Firefox 3 </li>
+         <li class="opera">Opera</li>
+         <li class="ie new">IE 9</li>
+         <li class="txt">mobile: all</li>
+  </ul>
+  
+ <pre contenteditable>var element = document.querySelector(selectors);
+var element = $(selectors)[0];
+
+var elements = document.querySelectorAll(selectors);
+var elements = $(selectors);</pre>
+<p>Where 'selectors' is a comma separated list of CSS selectors</p>
+  <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome 6</li>
+         <li class="safari">Safari</li>
+         <li class="firefox">Firefox 3 </li>
+         <li class="opera">Opera</li>
+         <li class="ie">IE 8</li>
+         <li class="txt">mobile: all</li>
+  </ul>
+  </section>
+</div>
+
+   <div class="slide">
+      <header>
+         <h1>classList
+         </h1>
+      </header>
+      <section class="content">
+        <pre contenteditable>&lt;article id=&quot;main&quot; class="blogpost popup"&gt;&lt;/article&gt;</pre>
+        <pre contenteditable>var el = document.getElementById('main').<b>classList</b>;
+var el = document.querySelector('#main').<b>classList</b>;
+el.<b>add</b>('bgimage');<br>el.<b>remove</b>('blogpost');
+el.<b>toggle</b>('popup');
+console.log(el.<b>contains</b>('popup')); // false
+console.log(el.<b>contains</b>('blogpost')); // false
+console.log(el.<b>classList</b>.toString() == el.className); // true</pre>
+        <p>Result:</p>
+        <pre contenteditable>&lt;article id="main" class="bgimage"&gt;&lt;/article&gt;</pre>
+       <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome</li>
+         <li class="safari new">Safari 5.1</li>
+         <li class="firefox">Firefox </li>
+         <li class="opera">Opera</li>
+         <li class="ie bad">IE 10</li>
+         <li class="txt">mobile: Android 3, Opera 11.1</li>
+  </ul>
+      </section>
+  </div>  
+  
+  
+  
+  
+  <div class="slide" id="notifications-api">
+        
+          <header><h1>Notifications</h1></header>
+          <section>
+          <pre contenteditable>if (window.<b>webkitNotifications.checkPermission</b>() == 0) {
+  window.webkitNotifications.createNotification(picture, title, 
+      content).<b>show</b>();
+} else {
+  window.<b>webkitNotifications.requestPermission</b>();
+}</pre>
+        <div id="notifications-message">
+          <p>
+            <input type="button" class="button" id="request-permission" value="Allow / Reset Notifications"/>
+          </p>
+          
+         
+          <input type="button" class="button" id="show-notification" value="Show notifications"/>
+        </div>
+
+          <script defer="">
+          document.getElementById('request-permission').addEventListener('click', function() {
+            window.webkitNotifications.requestPermission();
+          }, false);
+
+          document.getElementById('show-notification').addEventListener('click', function() {
+            shownNotice();
+          }, false);
+
+         
+		  
+		  function shownNotice(){
+			if (window.webkitNotifications.checkPermission() == 0) {
+			console.log('hi');
+                // note the show()
+                window.webkitNotifications.createNotification('http://standardista.com', 'Estelle Weyl', 'Tthat\'s all we have for you today folks').show();
+              } else {
+				  
+                alert('You have to select "Set notification permissions for this page" first notifications to work.');
+                return;
+              }  
+		  }
+
+        
+          </script>
+
+          </section>
+        <span class="counter"></span></div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<!-- ###################################################################   
+
+	    Conclusion
+
+     ################################################################### --> 
+  <div class="slide intro">
+      <header>
+         <h1><b>Scene 5:</b><br>The End</h1>
+      </header>
+      <section class="content">
+      </section>
+      </div>
+      
+    
+   <div class="slide intro"> 
+     <header><h1>Thank you</h1></header>
+     <section class="content"> 
+       <p>Estelle Weyl 
+     	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
+     </p>
+            <p><a href="http://standardista.com">www.standardista.com</a></p>
+            <p><a href="http://twitter.com/estellevw">@estellevw</a></p>     
+     </section>
+    </div>   
+   </div>
+   
+  </div>
+ 
+ 
+<!-- ###################################################################   
+
+	    END
+
+     ################################################################### --> 
+<script>
+function vendorPrefix(prefix, id){
+	  var prefixTxt = 'cat';
+		switch (prefix){
+			case 'w':
+				prefixTxt = '-webkit-';
+			break;
+			case 'm':
+				prefixTxt = '-moz-';
+			break;
+			case 'ms':
+				prefixTxt = '-ms-';
+			break;	
+			case 'o':
+				prefixTxt = '-o-';
+			break;
+			case 'r':
+				prefixTxt = '';
+			break;
+		};
+	  var spans = document.getElementById(id).querySelectorAll('u');
+	  for(var i = 0, j = spans.length; i < j; i++ ){
+	  	spans[i].innerHTML = prefixTxt;
+	  }
+			
+	}
+	
+	
+  (function() {
+  var doc = document;
+  var disableBuilds = true;
+
+  var ctr = 0;
+  var spaces = /\s+/, a1 = [''];
+
+  var toArray = function(list) {
+    return Array.prototype.slice.call(list || [], 0);
+  };
+
+  var byId = function(id) {
+    if (typeof id == 'string') { return doc.getElementById(id); }
+    return id;
+  };
+
+  var query = function(query, root) {
+    if (!query) { return []; }
+    if (typeof query != 'string') { return toArray(query); }
+    if (typeof root == 'string') {
+      root = byId(root);
+      if(!root){ return []; }
+    }
+
+    root = root || document;
+    var rootIsDoc = (root.nodeType == 9);
+    var doc = rootIsDoc ? root : (root.ownerDocument || document);
+
+    // rewrite the query to be ID rooted
+    if (!rootIsDoc || ('>~+'.indexOf(query.charAt(0)) >= 0)) {
+      root.id = root.id || ('qUnique' + (ctr++));
+      query = '#' + root.id + ' ' + query;
+    }
+    // don't choke on something like ".yada.yada >"
+    if ('>~+'.indexOf(query.slice(-1)) >= 0) { query += ' *'; }
+
+    return toArray(doc.querySelectorAll(query));
+  };
+
+  var strToArray = function(s) {
+    if (typeof s == 'string' || s instanceof String) {
+      if (s.indexOf(' ') < 0) {
+        a1[0] = s;
+        return a1;
+      } else {
+        return s.split(spaces);
+      }
+    }
+    return s;
+  };
+
+  var addClass = function(node, classStr) {
+    classStr = strToArray(classStr);
+    var cls = ' ' + node.className + ' ';
+    for (var i = 0, len = classStr.length, c; i < len; ++i) {
+      c = classStr[i];
+      if (c && cls.indexOf(' ' + c + ' ') < 0) {
+        cls += c + ' ';
+      }
+    }
+    node.className = cls.trim();
+  };
+
+  var removeClass = function(node, classStr) {
+    var cls;
+    if (classStr !== undefined) {
+      classStr = strToArray(classStr);
+      cls = ' ' + node.className + ' ';
+      for (var i = 0, len = classStr.length; i < len; ++i) {
+        cls = cls.replace(' ' + classStr[i] + ' ', ' ');
+      }
+      cls = cls.trim();
+    } else {
+      cls = '';
+    }
+    if (node.className != cls) {
+      node.className = cls;
+    }
+  };
+
+  var toggleClass = function(node, classStr) {
+    var cls = ' ' + node.className + ' ';
+    if (cls.indexOf(' ' + classStr.trim() + ' ') >= 0) {
+      removeClass(node, classStr);
+    } else {
+      addClass(node, classStr);
+    }
+  };
+
+  var ua = navigator.userAgent;
+  var isFF = parseFloat(ua.split('Firefox/')[1]) || undefined;
+  var isWK = parseFloat(ua.split('WebKit/')[1]) || undefined;
+  var isOpera = parseFloat(ua.split('Opera/')[1]) || undefined;
+
+  var canTransition = (function() {
+  var ver = parseFloat(ua.split('Version/')[1]) || undefined;
+  // test to determine if this browser can handle CSS transitions.
+  var cachedCanTransition = 
+    (isWK || (isFF && isFF > 3.6 ) || (isOpera && ver >= 10.5));
+    return function() { return cachedCanTransition; }
+  })();
+
+  //
+  // Slide class
+  //
+  var Slide = function(node, idx) {
+    this._node = node;
+    if (idx >= 0) {
+      this._count = idx + 1;
+    }
+    if (this._node) {
+      addClass(this._node, 'slide distant-slide');
+    }
+    this._makeCounter();
+    this._makeBuildList();
+  };
+
+  Slide.prototype = {
+    _node: null,
+    _count: 0,
+    _buildList: [],
+    _visited: false,
+    _currentState: '',
+    _states: [ 'distant-slide', 'far-past',
+               'past', 'current', 'future',
+               'far-future', 'distant-slide' ],
+    setState: function(state) {
+      if (typeof state != 'string') {
+        state = this._states[state];
+      }
+      if (state == 'current' && !this._visited) {
+        this._visited = true;
+        this._makeBuildList();
+      }
+      removeClass(this._node, this._states);
+      addClass(this._node, state);
+      this._currentState = state;
+
+      // delay first auto run. Really wish this were in CSS.
+      /*
+      this._runAutos();
+      */
+      var _t = this;
+      setTimeout(function(){ _t._runAutos(); } , 400);
+    },
+    _makeCounter: function() {
+      if(!this._count || !this._node) { return; }
+      var c = doc.createElement('span');
+      c.innerHTML = this._count;
+      c.className = 'counter';
+      this._node.appendChild(c);
+    },
+    _makeBuildList: function() {
+      this._buildList = [];
+      if (disableBuilds) { return; }
+      if (this._node) {
+        this._buildList = query('[data-build] > *', this._node);
+      }
+      this._buildList.forEach(function(el) {
+        addClass(el, 'to-build');
+      });
+    },
+    _runAutos: function() {
+      if (this._currentState != 'current') {
+        return;
+      }
+      // find the next auto, slice it out of the list, and run it
+      var idx = -1;
+      this._buildList.some(function(n, i) {
+        if (n.hasAttribute('data-auto')) {
+          idx = i;
+          return true;
+        }
+        return false;
+      });
+      if (idx >= 0) {
+        var elem = this._buildList.splice(idx, 1)[0];
+        var transitionEnd = isWK ? 'webkitTransitionEnd' : (isFF ? 'mozTransitionEnd' : 'oTransitionEnd');
+        var _t = this;
+        if (canTransition()) {
+          var l = function(evt) {
+            elem.parentNode.removeEventListener(transitionEnd, l, false);
+            _t._runAutos();
+          };
+          elem.parentNode.addEventListener(transitionEnd, l, false);
+          removeClass(elem, 'to-build');
+        } else {
+          setTimeout(function() {
+            removeClass(elem, 'to-build');
+            _t._runAutos();
+          }, 400);
+        }
+      }
+    },
+    buildNext: function() {
+      if (!this._buildList.length) {
+        return false;
+      }
+      removeClass(this._buildList.shift(), 'to-build');
+      return true;
+    },
+  };
+
+  //
+  // SlideShow class
+  //
+  var SlideShow = function(slides) {
+    this._slides = (slides || []).map(function(el, idx) {
+      return new Slide(el, idx);
+    });
+
+    var h = window.location.hash;
+    try {
+      this.current = parseInt(h.split('#slide')[1], 10);
+    }catch (e) { /* squeltch */ }
+    this.current = isNaN(this.current) ? 1 : this.current;
+    var _t = this;
+    doc.addEventListener('keydown', 
+        function(e) { _t.handleKeys(e); }, false);
+    doc.addEventListener('mousewheel', 
+        function(e) { _t.handleWheel(e); }, false);
+    doc.addEventListener('DOMMouseScroll', 
+        function(e) { _t.handleWheel(e); }, false);
+    doc.addEventListener('touchstart', 
+        function(e) { _t.handleTouchStart(e); }, false);
+    doc.addEventListener('touchend', 
+        function(e) { _t.handleTouchEnd(e); }, false);
+    window.addEventListener('popstate',
+        function(e) { _t.go(e.state); }, false);
+    this._update();
+  };
+
+  SlideShow.prototype = {
+    _slides: [],
+    _update: function(dontPush) {
+      document.querySelector('#presentation-counter').innerText = this.current;
+      if (history.pushState) {
+        if (!dontPush) {
+          history.pushState(this.current, 'Slide ' + this.current, '#slide' + this.current);
+        }
+      } else {
+        window.location.hash = 'slide' + this.current;
+      }
+      for (var x = this.current-1; x < this.current + 7; x++) {
+        if (this._slides[x-4]) {
+          this._slides[x-4].setState(Math.max(0, x-this.current));
+        }
+      }
+    },
+
+    current: 0,
+    next: function() {
+      if (!this._slides[this.current-1].buildNext()) {
+        this.current = Math.min(this.current + 1, this._slides.length);
+        this._update();
+      }
+    },
+    prev: function() {
+      this.current = Math.max(this.current-1, 1);
+      this._update();
+    },
+    go: function(num) {
+      if (!num) return;
+      if (history.pushState && this.current != num) {
+        history.replaceState(this.current, 'Slide ' + this.current, '#slide' + this.current);
+      }
+      this.current = num;
+      this._update(true);
+    },
+
+    _notesOn: false,
+    showNotes: function() {
+      var isOn = this._notesOn = !this._notesOn;
+	  console.log(isOn);
+      query('.notes').forEach(function(el) {
+        el.style.display = (isOn) ? 'inline-block' : 'none';
+	    console.log(isOn);
+      });
+    },
+    switch3D: function() {
+      toggleClass(document.body, 'three-d');
+    },
+    handleWheel: function(e) {
+      var delta = 0;
+      if (e.wheelDelta) {
+        delta = e.wheelDelta/120;
+        if (isOpera) {
+          delta = -delta;
+        }
+      } else if (e.detail) {
+        delta = -e.detail/3;
+      }
+
+      if (delta > 0 ) {
+        this.prev();
+        return;
+      }
+      if (delta < 0 ) {
+        this.next();
+        return;
+      }
+    },
+    handleKeys: function(e) {
+      
+      if (/^(input|textarea)$/i.test(e.target.nodeName)) return;
+      
+      switch (e.keyCode) {
+        case 37: // left arrow
+          this.prev(); break;
+        case 39: // right arrow
+        case 32: // space
+          this.next(); break;
+        case 50: // 2
+          this.showNotes(); break;
+        case 51: // 3
+          this.switch3D(); break;
+      }
+    },
+    _touchStartX: 0,
+    handleTouchStart: function(e) {
+      this._touchStartX = e.touches[0].pageX;
+    },
+    handleTouchEnd: function(e) {
+      var delta = this._touchStartX - e.changedTouches[0].pageX;
+      var SWIPE_SIZE = 150;
+      if (delta > SWIPE_SIZE) {
+        this.next();
+      } else if (delta< -SWIPE_SIZE) {
+         this.prev();
+       }
+    },
+  };
+
+  // Initialize
+  var slideshow = new SlideShow(query('.slide'));
+})();
+
+
+  </script>
+  <!--[if lt IE 9]>
+  <script 
+  src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({ mode: "overlay" });</script>
+  <![endif]--> 
+ 
+  </body> 
+</html>

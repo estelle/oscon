@@ -1,0 +1,780 @@
+<!doctype html>
+<meta charset="utf-8">
+<html> 
+  <head> 
+    <!--[if gte IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]--> 
+    <!--[if lt IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    <![endif]--> 
+    <meta charset="utf-8" />
+    <title>HTML5 &amp; CSS3: The Good Enough Parts</title>
+    <link href="http://fonts.googleapis.com/css?family=Paytone+One:regular" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" media="print" href="../openwebcamp3/print.css"/>  
+    <link rel="stylesheet" media="all" href="../openwebcamp3/screen.css"/>  
+    <link rel="stylesheet" media="all" href="../openwebcamp3/effects.css"/>
+    <link rel="stylesheet" href="http://standardista.com/cssgradients/css/religion.css"/> 
+</head> 
+<body> 
+
+  
+  <div id="info">
+    <p>Estelle Weyl &middot <a href="http://standardista.com">Standardista.com</a> &middot; <a href="http://www.twitter.com/estellevw">@estellevw</a> &middot;Press <span class="key">&rarr;</span> key to advance.  &middot;Press <span class="key">2</span> for notes.
+    </p>
+  </div>
+  
+  <div id="presentation">
+    
+   <div id="presentation-counter"></div>
+      
+   <div id="slides">
+   
+    
+    
+   
+    <div class="slide intro">
+     <header>
+      <h1>HTML5 &amp; CSS3:<br>
+		  the Good Enough Parts</h1>
+     <p>Estelle Weyl 
+     	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
+     </p>
+     <p>
+     	<a href="http://standardista.com">www.standardista.com</a><br>
+        <a href="http://twitter.com/estellevw">@estellevw</a>
+     </p>  
+     </header>
+    </div>   
+    
+   <div class="slide" id="components">
+      <section class="content">
+      <div class="col">
+      <div class="even">
+      <p>CSS</p>
+      <ul><li>
+        @font-face Web fonts</li>
+        <li>
+        calc() in CSS</li><li>
+        Generated content</li><li>
+        Gradients</li>
+        <li>display values</li>
+        <li>
+          Mulitiple backgrounds</li>
+        <li>background image properties</li>
+        <li>
+        Border images</li><li>
+        Border-radius (rounded corners)</li><li>
+        Box-shadow</li><li>
+        Box-sizing</li>
+        <li>
+        New Colors</li>
+        <li>Alphatransparency</li>
+        <li>
+        Media Queries</li><li>
+        Multiple column layout</li><li>
+        object-fit/object-position</li><li>
+        Opacity</li>
+        <li>CSS3 
+        selectors</li><li>
+        Text-shadow</li><li>
+        Transforms</li><li>
+        Transitions</li>
+        <li> 3D Transforms</li>
+        <li> Animation</li>
+        <li>
+        Word-wrap</li><li>
+        Flexible Box Layout Module</li>
+        <li>Grid Layout</li>
+        <li>
+        rem (root em) units</li>
+        <li>
+        Masks</li><li>
+        Reflections</li><li>
+        text-stroke</li><li>
+        Text-overflow</li>
+        </ul>
+        </div>
+        </div>
+        <div class="col">
+        <div>
+        <p>
+        HTML5</p>
+        <ul>
+        <li>Semantic elements</li>
+        <li>Audio element</li>
+        <li>Canvas</li>
+        <li>contenteditable attribute</li>
+        <li>dataset &amp; data-* attributes</li>
+        <li>Details &amp; Summary elements</li>
+        <li>Drag and Drop</li>
+        <li>HTML5 form features</li>
+        <li>Form validation</li>
+        <li>Datalist element</li>
+        <li>Progress &amp; Meter</li>
+        <li>New semantic elements</li><li>
+        Offline web applications</li><li>
+        Ruby annotation</li><li>
+        Session history management</li><li>
+        Text API for Canvas</li><li>
+        Toolbar/context menu</li><li>
+        Video element</li><li>
+        WebGL - 3D Canvas graphics
+        </li>
+        </ul>
+        </div>
+        <div class="even" style="border-bottom-left-radius:0; border-bottom-right-radius:0;">
+        <p>
+        JS API</p>
+        <ul><li>
+        Cross-document messaging</li><li>
+        Cross-Origin Resource Sharing</li><li>
+        File API</li><li>
+        Geolocation</li><li>
+        Hashchange event</li><li>
+        IndexedDB</li>
+        
+        <li>
+     
+        JSON parsing</li>
+        </ul>
+        </div>
+        
+        </div>
+        <div class="col">
+        <div class="even" style="border-top-left-radius:0; border-top-right-radius:0;">
+        <ul><li>
+        Server-sent DOM events</li><li>
+        Web Notifications</li><li>
+        Web Sockets</li><li>
+        Web Storage</li><li>
+        Web Workers</li><li>
+        Stream API</li><li>
+        Web SQL Database</li><li>
+        SVG
+        </li>
+        </ul>
+        </div>
+        <div>
+        <p>
+        Other</p>
+        <ul><li>
+        classList (DOMTokenList )</li><li>
+        Data URLs</li><li>
+        getElementsByClassName</li><li>
+        MathML</li>
+        <li>
+        MPEG-4/H.264/WebM/VP8/Ogg/Theora video formats</li><li>
+        querySelector/querySelectorAll</li><li>
+        Touch events</li><li>
+        WAI-ARIA Accessibility features</li>
+        <li>
+        Font Formats</li><li>
+        XHTML served as application/xhtml+xml</li><li>
+        XMLHttpRequest 2</li><li>
+        XHTML+SMIL animation</li>
+      </ul>
+      </div>
+      </div>
+      </section>
+  </div> 
+  
+   <!--  <div class="slide" style="padding:0; overflow:hidden">
+      <object data="http://www.caniuse.com/" style="height: 780px;
+width: 940px;
+overflow:hidden; text-align:center "> 
+             
+     </object> 
+  </div> -->
+  
+    
+    <div class="slide intro">
+     <header style="font-size:30px">
+      <h1>Part 1: CSS3 Snow</h1>
+      <h1>Part 2: CSS3 Other features</h1>
+      <h1>Part 3: HTML5</h1>
+      <h1>Part 4: APIs</h1>
+     </header>
+    </div> 
+    
+    <div class="slide intro">
+    
+     <header>
+      <h1><b>Part 1: CSS3</b> <br>
+Modified version of Making Snow</h1>
+     </header>
+    </div> 
+    
+     
+    
+
+    
+   
+<div class="slide"> 
+     <header><h1>CSS3 Features in Part 1</h1></header> 
+     <section class="content"> 
+     <ul class="imp">
+     	<li>CSS3 Selectors</li>
+     	<li>linear gradients</li>
+     	<li>opacity </li>
+        <li>RGBA colors</li>
+     	<li>border-radius</li>
+		<li>transforms</li>
+		<li>transitions</li>
+		<li>animations</li>
+     </ul>
+     <p class="notes">Opacity is from CSS2</p>
+     </section>
+</div>
+  
+  
+
+<!-- ###################################################################   
+
+	    Part 2: Other CSS3 Properties
+
+     ################################################################### -->
+<div class="slide intro"> 
+<header><h1><b>Chapter 2:</b> <br />Other CSS3 Properties</h1></header>
+</div>  
+
+<div class="slide"> 
+<header><h1>Other CSS3 Properties</h1></header> 
+<section class="content columns2"> 
+<ul class="">
+     	<li>text-shadows</li>
+        <li>box-shadow</li>
+     	<li>@font-face</li>
+	<li>media queries</li>
+	<li>box-sizing</li>
+    <li>columns</li>
+    <li>flexible box model</li>
+    <li>grids</li>
+    <li>background properties (multiple, clip, size, 4-positions)</li>
+    <li>border-image</li>
+    <li>text-overflow</li>
+	<li>word-wrap: breakword</li>
+    <li>calc()</li>
+    <li>rem</li>
+    
+       <li style="opacity: 0.3"> Masks</li><li style="opacity: 0.3">
+        Reflections</li><li style="opacity: 0.3">
+        text-stroke</li>
+</ul>
+
+</section>
+</div>
+     
+ 
+ 
+<!-- ###################################################################   
+
+	    Part 3: HTML5
+
+     ################################################################### -->  
+    <div class="slide intro">
+      <header>
+         <h1><b>Act 3:</b>
+         HTML5</h1>
+         </h1>
+      </header>
+  </div>    
+  
+   
+  
+  
+  
+  <div class="slide">
+      <header>
+         <h1>HTML5 Components
+         </h1>
+      </header>
+      <section class="content columns2">
+        <ul>
+        <li>Doctype</li>
+        <li>Character Set</li>
+        <li>Type Attribute</li>
+        <li>Semantic elements</li>
+        <li>&lt;figure> &amp; &lt;figcaption></li>
+        <li>&lt;details> &amp; &lt;summary></li>
+        <li>Ruby annotation</li>
+        <li>contenteditable attribute</li>
+        <li>dataset &amp; data-* attributes</li>
+        <li>HTML5 form features</li>
+        <li>Form validation</li>
+        <li  style="opacity: 0.3">&lt;datalist&gt; element</li>
+        <li>&lt;progress> &amp; &lt;meter></li>
+        <li>&lt;audio> element</li>
+        <li>&lt;video> element</li>
+        <li>&lt;canvas></li>
+        <li>WebGL - 3D Canvas graphics</li>
+        </ul>
+      </section>
+  </div>  
+  
+ 
+  
+  
+  
+<!-- ###################################################################   
+
+	    Part 4: JS APIs
+
+     ################################################################### -->    
+    
+   <div class="slide intro">
+      <header>
+         <h1><b>Section 4:</b><br>
+JavaScript APIs</h1>
+         </h1>
+      </header>
+  </div> 
+  
+     <div class="slide">
+      <header>
+         <h1>JavaScript APIs
+         </h1>
+      </header>
+      <section class="content">
+      <ul>
+       <li>Offline web apps</li>
+	  <li>Web Storage</li>
+	  <li>Indexed dataBase</li>
+      <li>Geolocation</li>
+      <li>Session history </li>
+      <li>Drag and Drop</li>
+      <li>File API</li>
+      <li>getElementsByClassName</li>
+      <li>querySelector/querySelectorAll </li>
+      <li style="opacity: 0.3;">Hashchange event</li>
+      <li style="opacity: 0.3;">Cross-document messaging </li>
+      <li style="opacity: 0.3;">Cross-Origin Resource Sharing</li>
+      <li style="opacity: 0.3;">JSON parsing </li>
+      <li style="opacity: 0.3;">Web Workers</li>
+      <li style="opacity: 0.3;">Web Sockets</li>
+      <li style="opacity: 0.3;">Server events</li>
+      <li style="opacity: 0.3;">Web Notifications</li>
+      <li style="opacity: 0.3;">classList (DOMTokenList )</li>
+      <li style="opacity: 0.3;">Touch events </li>
+      </ul>
+      </section>
+  </div> 
+  
+  
+<!-- ###################################################################   
+
+	    Conclusion
+
+     ################################################################### --> 
+   <div class="slide intro">
+     <header style="font-size:30px">
+      <h1><a href="part1.html">Part 1: CSS3 Snow</a></h1>
+      <h1><a href="part2.html">Chapter 2: Other features</a></h1>
+      <h1><a href="part3.html">Act 3: HTML5</a></h1>
+      <h1><a href="part4.html">Section 4: APIs</a></h1>
+     </header>
+    </div> 
+  <div class="slide intro">
+      <header>
+         <h1><b>Part 5:</b><br>The End</h1>
+      </header>
+      <section class="content">
+      </section>
+      </div>
+      
+    
+   <div class="slide intro"> 
+     <header><h1>Thank you</h1></header>
+     <section class="content"> 
+       <p>Estelle Weyl 
+     	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
+     </p>
+            <p><a href="http://standardista.com">www.standardista.com</a></p>
+            <p><a href="http://twitter.com/estellevw">@estellevw</a></p>     
+     </section>
+    </div>   
+   </div>
+   
+  </div>
+ 
+ 
+<!-- ###################################################################   
+
+	    END
+
+     ################################################################### --> 
+<script>
+function vendorPrefix(prefix, id){
+	  var prefixTxt = 'cat';
+		switch (prefix){
+			case 'w':
+				prefixTxt = '-webkit-';
+			break;
+			case 'm':
+				prefixTxt = '-moz-';
+			break;
+			case 'ms':
+				prefixTxt = '-ms-';
+			break;	
+			case 'o':
+				prefixTxt = '-o-';
+			break;
+			case 'r':
+				prefixTxt = '';
+			break;
+		};
+	  var spans = document.getElementById(id).querySelectorAll('u');
+	  for(var i = 0, j = spans.length; i < j; i++ ){
+	  	spans[i].innerHTML = prefixTxt;
+	  }
+			
+	}
+	
+	
+  (function() {
+  var doc = document;
+  var disableBuilds = true;
+
+  var ctr = 0;
+  var spaces = /\s+/, a1 = [''];
+
+  var toArray = function(list) {
+    return Array.prototype.slice.call(list || [], 0);
+  };
+
+  var byId = function(id) {
+    if (typeof id == 'string') { return doc.getElementById(id); }
+    return id;
+  };
+
+  var query = function(query, root) {
+    if (!query) { return []; }
+    if (typeof query != 'string') { return toArray(query); }
+    if (typeof root == 'string') {
+      root = byId(root);
+      if(!root){ return []; }
+    }
+
+    root = root || document;
+    var rootIsDoc = (root.nodeType == 9);
+    var doc = rootIsDoc ? root : (root.ownerDocument || document);
+
+    // rewrite the query to be ID rooted
+    if (!rootIsDoc || ('>~+'.indexOf(query.charAt(0)) >= 0)) {
+      root.id = root.id || ('qUnique' + (ctr++));
+      query = '#' + root.id + ' ' + query;
+    }
+    // don't choke on something like ".yada.yada >"
+    if ('>~+'.indexOf(query.slice(-1)) >= 0) { query += ' *'; }
+
+    return toArray(doc.querySelectorAll(query));
+  };
+
+  var strToArray = function(s) {
+    if (typeof s == 'string' || s instanceof String) {
+      if (s.indexOf(' ') < 0) {
+        a1[0] = s;
+        return a1;
+      } else {
+        return s.split(spaces);
+      }
+    }
+    return s;
+  };
+
+  var addClass = function(node, classStr) {
+    classStr = strToArray(classStr);
+    var cls = ' ' + node.className + ' ';
+    for (var i = 0, len = classStr.length, c; i < len; ++i) {
+      c = classStr[i];
+      if (c && cls.indexOf(' ' + c + ' ') < 0) {
+        cls += c + ' ';
+      }
+    }
+    node.className = cls.trim();
+  };
+
+  var removeClass = function(node, classStr) {
+    var cls;
+    if (classStr !== undefined) {
+      classStr = strToArray(classStr);
+      cls = ' ' + node.className + ' ';
+      for (var i = 0, len = classStr.length; i < len; ++i) {
+        cls = cls.replace(' ' + classStr[i] + ' ', ' ');
+      }
+      cls = cls.trim();
+    } else {
+      cls = '';
+    }
+    if (node.className != cls) {
+      node.className = cls;
+    }
+  };
+
+  var toggleClass = function(node, classStr) {
+    var cls = ' ' + node.className + ' ';
+    if (cls.indexOf(' ' + classStr.trim() + ' ') >= 0) {
+      removeClass(node, classStr);
+    } else {
+      addClass(node, classStr);
+    }
+  };
+
+  var ua = navigator.userAgent;
+  var isFF = parseFloat(ua.split('Firefox/')[1]) || undefined;
+  var isWK = parseFloat(ua.split('WebKit/')[1]) || undefined;
+  var isOpera = parseFloat(ua.split('Opera/')[1]) || undefined;
+
+  var canTransition = (function() {
+  var ver = parseFloat(ua.split('Version/')[1]) || undefined;
+  // test to determine if this browser can handle CSS transitions.
+  var cachedCanTransition = 
+    (isWK || (isFF && isFF > 3.6 ) || (isOpera && ver >= 10.5));
+    return function() { return cachedCanTransition; }
+  })();
+
+  //
+  // Slide class
+  //
+  var Slide = function(node, idx) {
+    this._node = node;
+    if (idx >= 0) {
+      this._count = idx + 1;
+    }
+    if (this._node) {
+      addClass(this._node, 'slide distant-slide');
+    }
+    this._makeCounter();
+    this._makeBuildList();
+  };
+
+  Slide.prototype = {
+    _node: null,
+    _count: 0,
+    _buildList: [],
+    _visited: false,
+    _currentState: '',
+    _states: [ 'distant-slide', 'far-past',
+               'past', 'current', 'future',
+               'far-future', 'distant-slide' ],
+    setState: function(state) {
+      if (typeof state != 'string') {
+        state = this._states[state];
+      }
+      if (state == 'current' && !this._visited) {
+        this._visited = true;
+        this._makeBuildList();
+      }
+      removeClass(this._node, this._states);
+      addClass(this._node, state);
+      this._currentState = state;
+
+      // delay first auto run. Really wish this were in CSS.
+      /*
+      this._runAutos();
+      */
+      var _t = this;
+      setTimeout(function(){ _t._runAutos(); } , 400);
+    },
+    _makeCounter: function() {
+      if(!this._count || !this._node) { return; }
+      var c = doc.createElement('span');
+      c.innerHTML = this._count;
+      c.className = 'counter';
+      this._node.appendChild(c);
+    },
+    _makeBuildList: function() {
+      this._buildList = [];
+      if (disableBuilds) { return; }
+      if (this._node) {
+        this._buildList = query('[data-build] > *', this._node);
+      }
+      this._buildList.forEach(function(el) {
+        addClass(el, 'to-build');
+      });
+    },
+    _runAutos: function() {
+      if (this._currentState != 'current') {
+        return;
+      }
+      // find the next auto, slice it out of the list, and run it
+      var idx = -1;
+      this._buildList.some(function(n, i) {
+        if (n.hasAttribute('data-auto')) {
+          idx = i;
+          return true;
+        }
+        return false;
+      });
+      if (idx >= 0) {
+        var elem = this._buildList.splice(idx, 1)[0];
+        var transitionEnd = isWK ? 'webkitTransitionEnd' : (isFF ? 'mozTransitionEnd' : 'oTransitionEnd');
+        var _t = this;
+        if (canTransition()) {
+          var l = function(evt) {
+            elem.parentNode.removeEventListener(transitionEnd, l, false);
+            _t._runAutos();
+          };
+          elem.parentNode.addEventListener(transitionEnd, l, false);
+          removeClass(elem, 'to-build');
+        } else {
+          setTimeout(function() {
+            removeClass(elem, 'to-build');
+            _t._runAutos();
+          }, 400);
+        }
+      }
+    },
+    buildNext: function() {
+      if (!this._buildList.length) {
+        return false;
+      }
+      removeClass(this._buildList.shift(), 'to-build');
+      return true;
+    },
+  };
+
+  //
+  // SlideShow class
+  //
+  var SlideShow = function(slides) {
+    this._slides = (slides || []).map(function(el, idx) {
+      return new Slide(el, idx);
+    });
+
+    var h = window.location.hash;
+    try {
+      this.current = parseInt(h.split('#slide')[1], 10);
+    }catch (e) { /* squeltch */ }
+    this.current = isNaN(this.current) ? 1 : this.current;
+    var _t = this;
+    doc.addEventListener('keydown', 
+        function(e) { _t.handleKeys(e); }, false);
+    doc.addEventListener('mousewheel', 
+        function(e) { _t.handleWheel(e); }, false);
+    doc.addEventListener('DOMMouseScroll', 
+        function(e) { _t.handleWheel(e); }, false);
+    doc.addEventListener('touchstart', 
+        function(e) { _t.handleTouchStart(e); }, false);
+    doc.addEventListener('touchend', 
+        function(e) { _t.handleTouchEnd(e); }, false);
+    window.addEventListener('popstate',
+        function(e) { _t.go(e.state); }, false);
+    this._update();
+  };
+
+  SlideShow.prototype = {
+    _slides: [],
+    _update: function(dontPush) {
+      document.querySelector('#presentation-counter').innerText = this.current;
+      if (history.pushState) {
+        if (!dontPush) {
+          history.pushState(this.current, 'Slide ' + this.current, '#slide' + this.current);
+        }
+      } else {
+        window.location.hash = 'slide' + this.current;
+      }
+      for (var x = this.current-1; x < this.current + 7; x++) {
+        if (this._slides[x-4]) {
+          this._slides[x-4].setState(Math.max(0, x-this.current));
+        }
+      }
+    },
+
+    current: 0,
+    next: function() {
+      if (!this._slides[this.current-1].buildNext()) {
+        this.current = Math.min(this.current + 1, this._slides.length);
+        this._update();
+      }
+    },
+    prev: function() {
+      this.current = Math.max(this.current-1, 1);
+      this._update();
+    },
+    go: function(num) {
+      if (!num) return;
+      if (history.pushState && this.current != num) {
+        history.replaceState(this.current, 'Slide ' + this.current, '#slide' + this.current);
+      }
+      this.current = num;
+      this._update(true);
+    },
+
+    _notesOn: false,
+    showNotes: function() {
+      var isOn = this._notesOn = !this._notesOn;
+	  console.log(isOn);
+      query('.notes').forEach(function(el) {
+        el.style.display = (isOn) ? 'inline-block' : 'none';
+	    console.log(isOn);
+      });
+    },
+    switch3D: function() {
+      toggleClass(document.body, 'three-d');
+    },
+    handleWheel: function(e) {
+      var delta = 0;
+      if (e.wheelDelta) {
+        delta = e.wheelDelta/120;
+        if (isOpera) {
+          delta = -delta;
+        }
+      } else if (e.detail) {
+        delta = -e.detail/3;
+      }
+
+      if (delta > 0 ) {
+        this.prev();
+        return;
+      }
+      if (delta < 0 ) {
+        this.next();
+        return;
+      }
+    },
+    handleKeys: function(e) {
+      
+      if (/^(input|textarea)$/i.test(e.target.nodeName)) return;
+      
+      switch (e.keyCode) {
+        case 37: // left arrow
+          this.prev(); break;
+        case 39: // right arrow
+        case 32: // space
+          this.next(); break;
+        case 50: // 2
+          this.showNotes(); break;
+        case 51: // 3
+          this.switch3D(); break;
+      }
+    },
+    _touchStartX: 0,
+    handleTouchStart: function(e) {
+      this._touchStartX = e.touches[0].pageX;
+    },
+    handleTouchEnd: function(e) {
+      var delta = this._touchStartX - e.changedTouches[0].pageX;
+      var SWIPE_SIZE = 150;
+      if (delta > SWIPE_SIZE) {
+        this.next();
+      } else if (delta< -SWIPE_SIZE) {
+         this.prev();
+       }
+    },
+  };
+
+  // Initialize
+  var slideshow = new SlideShow(query('.slide'));
+})();
+
+
+  </script>
+  <!--[if lt IE 9]>
+  <script 
+  src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({ mode: "overlay" });</script>
+  <![endif]--> 
+ 
+  </body> 
+</html>
