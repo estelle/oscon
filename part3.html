@@ -1,52 +1,51 @@
 <!doctype html>
 <meta charset="utf-8">
-<html> 
-  <head> 
+<html>
+  <head>
     <!--[if gte IE 9]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <![endif]--> 
+    <![endif]-->
     <!--[if lt IE 9]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
-    <![endif]--> 
+    <![endif]-->
     <meta charset="utf-8" />
     <title>HTML5 &amp; CSS3: The Good Enough Parts</title>
     <link href="http://fonts.googleapis.com/css?family=Paytone+One:regular" rel="stylesheet" type="text/css" />
-    
-<link rel="stylesheet" media="print" href="../openwebcamp3/print.css"/>  
-<link rel="stylesheet" media="all" href="../openwebcamp3/screen.css"/>  
-<link rel="stylesheet" media="all" href="../openwebcamp3/effects.css"/>
-<link rel="stylesheet" href="http://standardista.com/cssgradients/css/religion.css"/> 
 
-</head> 
-<body> 
+<link rel="stylesheet" media="print" href="css/print.css"/>
+<link rel="stylesheet" media="all" href="css/screen.css"/>
+<link rel="stylesheet" media="all" href="css/effects.css"/>
 
-  
+</head>
+<body>
+
+
   <div id="info">
     <p>Estelle Weyl &middot <a href="http://standardista.com">Standardista.com</a> &middot; <a href="http://www.twitter.com/estellevw">@estellevw</a> &middot;Press <span class="key">&rarr;</span> key to advance.  &middot;Press <span class="key">2</span> for notes.
     </p>
   </div>
-  
+
   <div id="presentation">
-     
+
    <div id="presentation-counter"></div>
-      
+
    <div id="slides">
-   
-    
-    
-   
+
+
+
+
     <div class="slide intro">
      <header>
       <h1>HTML5 &amp; CSS3:<br>
 		  the Good Enough Parts</h1>
-      <p>Estelle Weyl 
+      <p>Estelle Weyl
      	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
      </p><p><a href="http://standardista.com">www.standardista.com</a><br>
         <a href="http://twitter.com/estellevw">@estellevw</a>
-     </p>   
+     </p>
      </header>
-    </div>   
-    
+    </div>
+
    <div class="slide" id="components">
       <section class="content">
       <div class="col">
@@ -81,7 +80,7 @@
         Multiple column layout</li><li>
         object-fit/object-position</li><li>
           <span class="done">Opacity</span></li>
-        <li class="done">CSS3 
+        <li class="done">CSS3
         selectors</li>
         <li class="done">
         Text-shadow</li>
@@ -148,13 +147,13 @@
         Hashchange event</li>
         <li class="future">
         IndexedDB</li>
-        
+
         <li>
-     
+
         JSON parsing</li>
         </ul>
         </div>
-        
+
         </div>
         <div class="col">
         <div class="even" style="border-top-left-radius:0; border-top-right-radius:0;">
@@ -192,30 +191,30 @@
       </div>
       </div>
       </section>
-  </div> 
-  
-  
+  </div>
 
-    
-     
- 
-<!-- ###################################################################   
+
+
+
+
+
+<!-- ###################################################################
 
 	    Part 3: HTML5
 
-     ################################################################### -->  
+     ################################################################### -->
     <div class="slide intro">
       <header>
          <h1><b>Part 3:</b>
          HTML5</h1>
          </h1>
       </header>
-  </div>    
-  
-   
-  
-  
-  
+  </div>
+
+
+
+
+
   <div class="slide">
       <header>
          <h1>HTML5 Components
@@ -242,19 +241,19 @@
         <li>WebGL - 3D Canvas graphics</li>
         </ul>
       </section>
-  </div>  
-  
-     <!-- <div class="slide" style="padding:0; overflow:hidden;"> 
-    
-    
+  </div>
+
+     <!-- <div class="slide" style="padding:0; overflow:hidden;">
+
+
      <object data="http://html5readiness.com/" style="height: 780px;
 width: 940px;
-overflow:hidden; "> 
-     </object> 
-     
- 
+overflow:hidden; ">
+     </object>
+
+
   </div> -->
-  
+
      <div class="slide"><header>
          <h1>Old v. New Doctype
          </h1>
@@ -262,7 +261,7 @@ overflow:hidden; ">
       <section class="content">
         <style>
 		</style>
-       <pre contenteditable class="">&lt;!DOCTYPE html<span class="boo"> PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; 
+       <pre contenteditable class="">&lt;!DOCTYPE html<span class="boo"> PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;</span>&gt;
 &lt;html<span class="boo">  xmlns=&quot;http://www.w3.org/1999/xhtml&quot;</span>&gt;
 &lt;head&gt;
@@ -280,14 +279,14 @@ function newDoctype(el){
 	if(el.parentNode.className=='booOff'){
 		el.parentNode.className='booshow';
 		document.getElementById('newdoctitle').innerHTML = 'XHTML1 Strict Document';
-		
+
 	} else {
 		el.parentNode.className='booOff';
 		document.getElementById('newdoctitle').innerHTML = 'HTML5 Document';
 	}
 }
 </script>
-  </div>  
+  </div>
   <!--
      <div class="slide"><header>
          <h1>New Syntax
@@ -313,10 +312,10 @@ function newDoctype(el){
 <li>No &lsquo;type&rsquo; attribute</li>
 </ul>
 </section>
-  </div> 
--->  
-  
-     
+  </div>
+-->
+
+
   <div class="slide">
       <header>
          <h1>Minimalistic Syntax
@@ -343,15 +342,15 @@ function newDoctype(el){
 <li>&lt;body&gt; and &lt;head&gt; are inferred.</li>
 </ul>
       </section>
-  </div> 
-  
+  </div>
+
      <div class="slide" id="semels">
       <header>
          <h1>Non-Semantic Elements
          </h1>
       </header>
     <section class="content">
-    
+
         <div>
             <div class="divheader">&lt;div id="header"&gt;</div>
             <div class="divnav">&lt;div id="nav"&gt;</div>
@@ -366,9 +365,9 @@ function newDoctype(el){
             <div class="divfooter">&lt;div class="footer"&gt;</div>
         </div>
     </section>
-  </div> 
-  
-  
+  </div>
+
+
    <div class=" slide" id="semels">
       <header>
          <h1>Semantic Elements</h1>
@@ -388,15 +387,15 @@ function newDoctype(el){
             <div class="divfooter">&lt;footer&gt;</div>
         </div>
     </section>
-  </div> 
-  
+  </div>
+
      <div class="slide">
       <header>
          <h1>hgroup
          </h1>
       </header>
       <section class="content">
-      
+
       <pre contenteditable>
 &lt;hgroup&gt;
    &lt;h1&gt;This is my header&lt;/h1&gt;
@@ -404,8 +403,8 @@ function newDoctype(el){
 &lt;hgroup&gt;
       </pre>
       </section>
-  </div> 
-  
+  </div>
+
      <div class="slide">
       <header>
          <h1>figure &amp; figcaption
@@ -413,7 +412,7 @@ function newDoctype(el){
       </header>
       <section class="content">
         <pre contenteditable style="float:left;">&lt;figure&gt;
-  &lt;img src=&quot;htmlcss1.png&quot; 
+  &lt;img src=&quot;htmlcss1.png&quot;
     alt=&quot;HTML5 &amp;amp; CSS3 for the Real World&quot;/&gt;
   &lt;figcaption&gt;
      My Book
@@ -426,23 +425,23 @@ function newDoctype(el){
 	  function toggleFigureClass(event){
 		  var el = document.getElementById('figureex');
 		  if (el.className == 'styled') {
-				el.className =''; 
-				event.target.value = 'Add Style'; 
+				el.className ='';
+				event.target.value = 'Add Style';
 		  } else {
 			    el.className = 'styled';
-				event.target.value = 'Remove Style'; 
+				event.target.value = 'Remove Style';
 		  }
 	  }
 	  </script>
-  </div> 
-  
+  </div>
+
      <div class="slide">
       <header>
          <h1>Details &amp; Summary</h1>
          </h1>
       </header>
 <section class="content">
-  
+
       <pre contenteditable>&lt;details&gt;
    &lt;summary&gt;5 of 5 stars from three reviews&lt;/summary&gt;
    &lt;ul&gt;
@@ -468,8 +467,8 @@ function newDoctype(el){
          <li class="opera bad">Opera 11</li>
          <li class="ie bad">IE 10</li>
      </ul>
-  </div> 
-  
+  </div>
+
    <div class="slide">
       <header>
          <h1>New Elements
@@ -534,7 +533,7 @@ function newDoctype(el){
             wbr</li>
         </ul>
       </section>
-  </div> 
+  </div>
 <div class="slide">
       <header>
          <h1>Changed Elements</h1>
@@ -557,45 +556,45 @@ function newDoctype(el){
      </div>
      </section>
   </div>
-  
+
      <div class="slide">
       <header>
          <h1>Supporting Old Browsers
          </h1>
       </header>
-      
+
       <section class="content">
       <p>IE6-8 does not style elements that don't exist, so create the elements!</p>
-      <pre contenteditable>&lt;!--[if IE]&gt; 
-&lt;script type="text/javascript"&gt; 
-(function(){ 
+      <pre contenteditable>&lt;!--[if IE]&gt;
+&lt;script type="text/javascript"&gt;
+(function(){
   var html5elmeents ="article|aside|audio|canvas|...|video";
-  html5elmeents.split('|'); 
+  html5elmeents.split('|');
   for(var i = 0; i &lt; html5elmeents.length; i++){
-    document.createElement(html5elmeents[i]); 
-  } 
-})(); 
-&lt;/script&gt; 
+    document.createElement(html5elmeents[i]);
+  }
+})();
+&lt;/script&gt;
 &lt;![endif]--&gt;  </pre>
       </section>
-  </div> 
-  
-  
+  </div>
+
+
   <div class="slide" style="padding:0; overflow:hidden">
       <object data="http://www.modernizr.com/" style="height: 780px;
 width: 940px;
-overflow:scroll; text-align:center "> 
-             
-     </object> 
-  </div> 
-  
+overflow:scroll; text-align:center ">
+
+     </object>
+  </div>
+
   <div class="slide" style="padding:0; overflow:hidden">
       <object data="http://www.html5boilerplate.com/" style="height: 780px;
 width: 940px;
-overflow:scroll; text-align:center "> 
-             
-     </object> 
-  </div> 
+overflow:scroll; text-align:center ">
+
+     </object>
+  </div>
      <div class="slide">
       <header>
          <h1>Ruby annotation
@@ -608,10 +607,10 @@ overflow:scroll; text-align:center ">
       	<li>&lt;rt&gt; <span class="notes">ruby text</span></li>
       	<li>&lt;rp&gt; <span class="notes">ruby parenthesis</span></li>
         </ul>
-        <pre contenteditable><b>display:</b> ruby | ruby-base | ruby-text | 
+        <pre contenteditable><b>display:</b> ruby | ruby-base | ruby-text |
    ruby-base-container | ruby-text-container;
 
-<b>ruby-align</b>: <strong>auto</strong> | start | left | center | end | right | 
+<b>ruby-align</b>: <strong>auto</strong> | start | left | center | end | right |
    distribute-letter | distribute-space | line-edge;
 
 <b>ruby-overhang</b>: auto | start | end | <strong>none</strong>;
@@ -619,11 +618,11 @@ overflow:scroll; text-align:center ">
 <b>ruby-position</b>: before | after | right | inline;
 
 <b>ruby-span</b>: attr(x) | <strong>none</strong>;</pre>
-       
+
       </section>
   </div>
-  
-  
+
+
    <div class="slide">
       <header>
          <h1>Because Fluff is Yummy!
@@ -635,11 +634,11 @@ overflow:scroll; text-align:center ">
 	  Location: Atlantic I <br>
       By Nathaniel Schutta</p>
       </section>
-  </div> 
-  
-  
-  
-  
+  </div>
+
+
+
+
       <div class="slide">
       <header>
          <h1>New Attributes
@@ -648,7 +647,7 @@ overflow:scroll; text-align:center ">
       <section class="content">
       <ul>
       	<li>tabindex <b class="notes imp">/* now applicable to any element (-1)</b></li>
-      	<li>hidden <b class="notes imp">/* no longer relevant */</b></li>	
+      	<li>hidden <b class="notes imp">/* no longer relevant */</b></li>
         <li class="bad">contextMenu <b class="notes imp">contextmenu="menuID"</b></li>
         <li>spellCheck <b class="notes imp">/* denotes errors */</b></li>
         <li>data-* <b class="notes imp">/* anything you want, accessible via dataset */</b></li>
@@ -659,8 +658,8 @@ overflow:scroll; text-align:center ">
         <li>ARIA <b class="notes imp">/* accessibility */</b></li>
       </ul>
       </section>
-  </div> 
-  
+  </div>
+
      <div class="slide">
       <header>
          <h1>tabindex
@@ -676,8 +675,8 @@ overflow:scroll; text-align:center ">
 without changing &lsquo;tab&raquo; order</li>
       </ul>
       </section>
-  </div> 
-  
+  </div>
+
      <div class="slide">
       <header>
          <h1>contentEditable (&amp; spellcheck)
@@ -687,9 +686,9 @@ without changing &lsquo;tab&raquo; order</li>
       <pre contenteditable>&lt;pre contenteditable>Look. I am editable&gt;/pre></pre>
       <pre contenteditable>I am editable</pre>
       <p contenteditable spellcheck style="font-family:Arial, Helvetica, sans-serif">This paragrph has an error.</p>
-      
+
       <textarea spellcheck=true>This paragrph has an error.</textarea>
-      
+
       <ul class="icons" style="clear: both;">
          <li class="chrome">Chrome</li>
          <li class="safari ">Safari</li>
@@ -700,16 +699,16 @@ without changing &lsquo;tab&raquo; order</li>
      </ul>
      <pre contenteditable>spellcheck="true | false"</pre>
       </section>
-  </div> 
+  </div>
      <div class="slide">
       <header>
          <h1>data-* attributes
          </h1>
          <p class="notes">Define your own DOM manipulable data attributes</p>
       </header>
-      
+
       <section class="content">
-        
+
         <pre contenteditable>&lt;div id="card27" <b>data-cardID</b>="27" <b>data-row</b>="3" <b>data-col</b>="2"&gt;&lt;/div&gt;</pre>
         <pre contenteditable>var info = document.querySelector('#card27');
 var cardinfo = [];
@@ -721,18 +720,18 @@ var currentCard = cardinfo.join('');</pre>
         <pre contenteditable>currentCard == 'cardID: 27, row: 3, col: 2'</pre>
         <pre contenteditable>var cardID = info.getAttribute('data-cardID'); //27</pre>
         <p><small>All browsers support "data-*", but full support of 'dataset started with IE10, FF6, Safari 5.1, Chrome 7, Opera 11.1</small></p>
-     
+
       </section>
   </div>
-  
-   
+
+
 <div class="slide">
       <header>
          <h1>Microdata
          </h1>
       <p>Google processes RDFa, Microformats and Microdata.</p>
       </header>
-      <section class="content"> 
+      <section class="content">
       <pre style="float:left">  itemid
   itemprop
   itemref
@@ -744,20 +743,20 @@ photo        friend
 title        contact
 role         acquaintance
              address(adr)</pre>
-      <pre style="clear: both">&lt;div itemscope itemtype="<a href="http://data-vocabulary.org/">http://data-vocabulary.org/</a>Person">  
- &lt;img src="estelle.gif" itemprop="photo">  
+      <pre style="clear: both">&lt;div itemscope itemtype="<a href="http://data-vocabulary.org/">http://data-vocabulary.org/</a>Person">
+ &lt;img src="estelle.gif" itemprop="photo">
   &lt;p>Name: &lt;i itemprop="name">Estelle Weyl&lt;/i>
-  &lt;p>Title: &lt;i itemprop="title">Speaker, UI Engineer&lt;/i>   
-  &lt;p>Blog: &lt;a href="http://standardista.com" itemprop="affliation">Standardista</a>.   
-  &lt;p itemprop="address" itemscope  
-    itemtype="http://data-vocabulary.org/Address">Address:   
-    &lt;i itemprop="locality">San Carlos&lt;/i>,  
-    &lt;i itemprop="region">CA&lt;/i>&lt;/p>  
-&lt;/div></pre>  
-      
+  &lt;p>Title: &lt;i itemprop="title">Speaker, UI Engineer&lt;/i>
+  &lt;p>Blog: &lt;a href="http://standardista.com" itemprop="affliation">Standardista</a>.
+  &lt;p itemprop="address" itemscope
+    itemtype="http://data-vocabulary.org/Address">Address:
+    &lt;i itemprop="locality">San Carlos&lt;/i>,
+    &lt;i itemprop="region">CA&lt;/i>&lt;/p>
+&lt;/div></pre>
+
       </section>
-  </div> 
-  
+  </div>
+
     <div class="slide">
       <header>
          <h1>WAI-ARIA (examples)
@@ -782,7 +781,7 @@ role         acquaintance
         </li>
         <li>Widget Accessibility Attributes
           <ul>
-            <li>aria-haspopup | 
+            <li>aria-haspopup |
              aria-disabled
             ="true | false"</li>
             <li>aria-controls | aria-describedby = &quot;id&quot;</li>
@@ -796,8 +795,8 @@ role         acquaintance
         </li>
         </ol>
       </section>
-  </div>  
-  
+  </div>
+
      <div class="slide">
       <header>
          <h1>Web Forms
@@ -817,8 +816,8 @@ role         acquaintance
       </ul>
       <pre contenteditable>&lt;style&gt;<br>  input:required {<br>    border: 1px solid red;<br>  }<br>  input:focus:invalid {<br>    background-color: pink;<br>  }<br>&lt;/style&gt;     </pre>
       </section>
-  </div> 
-  
+  </div>
+
      <div class="slide" id="forminputs">
       <header>
          <h1>New Input Types
@@ -833,7 +832,7 @@ role         acquaintance
                 <li>datetime-local <input type=datetime-local></li>
                 <li>email <input type="email"></li>
                 <li>month <input type="month"></li>
-                
+
                 </ul>
                 <ul><li>number <input type="number" min="0" max="10" step="0.5"></li>
                 <li>range <input type="range" min="0" max="10" step="0.5"></li>
@@ -845,8 +844,8 @@ role         acquaintance
           </ul>
           </form>
       </section>
-  </div> 
-  
+  </div>
+
      <div class="slide">
       <header>
          <h1>New input attributes
@@ -874,32 +873,32 @@ role         acquaintance
                   <li>formnovalidate </li>
             </ul>
       </section>
-  </div> 
-  
-    <div class="slide section"> 
+  </div>
+
+    <div class="slide section">
           <header><h1>Attribute Soup</h1></header>
-          <section class="content"> 
-<pre contenteditable>&lt;label for=&quot;name&quot;&gt;Name: &lt;/label&gt; 
-&lt;input id=&quot;name&quot; name=&quot;inputName&quot; 
-  placeholder=&quot;placeholder text&quot; 
-  pattern=&quot;\w{6,9}&quot; 
+          <section class="content">
+<pre contenteditable>&lt;label for=&quot;name&quot;&gt;Name: &lt;/label&gt;
+&lt;input id=&quot;name&quot; name=&quot;inputName&quot;
+  placeholder=&quot;placeholder text&quot;
+  pattern=&quot;\w{6,9}&quot;
   required
   autofocus
   type=&quot;text&quot;/&gt;</pre>
-          
-          <form><label for="attributeSoup">Label: </label> 
+
+          <form><label for="attributeSoup">Label: </label>
 		<input id="attributeSoup" name="attributeSoup" class="classed" placeholder="placeholder text" pattern="\w{6,9}" required type="text"/></form>
-  
+
   <p><small>Note that the following CSS is used in our live examples:</small></p>
-  
+
   <pre contenteditable>input:focus:invalid { background-color: lightPink;}
 input:valid { background-color:lightGreen }
 input:required {border: 2px solid red;}
 input:optional {border: 2px solid green;}</pre>
           </section>
           <span class="counter"></span>
-        </div>  
-  
+        </div>
+
      <div class="slide">
       <header>
          <h1> Other form Elements
@@ -915,8 +914,8 @@ input:optional {border: 2px solid green;}</pre>
             <li>&lt;keygen&gt;</li>
           </ul>
       </section>
-  </div> 
-  
+  </div>
+
    <div class="slide">
       	<header><h1>&lt;meter&gt;, &lt;progress&gt; &amp; &lt;output&gt;</h1></header>
       <section class="content">
@@ -927,9 +926,9 @@ input:optional {border: 2px solid green;}</pre>
 <pre contenteditable>&lt;<b>progress</b> value="75" <b>max</b>="100"&gt;75% complete&lt;/<b>progress</b>&gt;</pre>
 <p>Download is: <progress value="75" max="100">75% complete</progress> </p>
 <pre contenteditable>&lt;<b>output</b>&gt;</pre>
-</pre> 
-<ul class="icons" style="margin-top:0;"> 
-  	   <li class="safari half"> Safari</li> 
+</pre>
+<ul class="icons" style="margin-top:0;">
+  	   <li class="safari half"> Safari</li>
        <li class="chrome">Chrome</li>
        <li class="opera">Opera</li>
   	   <li class="firefox half">Firefox</li>
@@ -937,7 +936,7 @@ input:optional {border: 2px solid green;}</pre>
      </ul></p>
 </section>
       </div>
-      
+
          <div class="slide">
       <header>
          <h1>Shameless Self Promotion!
@@ -949,15 +948,15 @@ input:optional {border: 2px solid green;}</pre>
 	  Location: Atlantic III <br>
       By Estelle Weyl (Standardista)</p>
       </section>
-  </div> 
-  
-  
+  </div>
+
+
   <div class="slide">
       <header>
          <h1>Audio &amp; Video</h1>
       </header>
       <section class="content" style="margin-top: -20px;">
-          
+
             <pre contenteditable>&lt;<strong>audio</strong> id="audio" src="sound.mp3" <strong>controls</strong>&gt;&lt;/audio&gt;<br>document.getElementById("audio").<strong>muted</strong> = false;</pre>
             <pre contenteditable>&lt;<strong>video</strong> id="video" src="movie.webm" <strong>autoplay</strong> <strong>controls</strong>&gt;&lt;/video&gt;<br>document.getElementById("video").<strong>play</strong>();</pre>
             <div id="video-column">
@@ -975,7 +974,7 @@ input:optional {border: 2px solid green;}</pre>
                 <input type="button" class="button"  id="mute" onClick="MuteUnMute()" value="Mute">
               </div>
             </div>
-            
+
             <div id="audio-column" class="center">
               <audio id="audio-clip" width="250" controls src="http://files.myopera.com/tagawa/blog/Ode-to-IE6.ogg" type="audio/ogg">
                 Your browser does not support the audio tag
@@ -1050,10 +1049,10 @@ Buttons from <a href="http://css3button.net/">css3button.net</a></small></small>
               audioPauseButton.disabled = true;
             }
           </script>
-  </div> 
-  
-  
-  
+  </div>
+
+
+
      <div class="slide">
       <header>
          <h1>&lt;audio&gt;
@@ -1062,10 +1061,10 @@ Buttons from <a href="http://css3button.net/">css3button.net</a></small></small>
       <section class="content">
     <div style="float: left;"><p>Attributes</p>
      <ul>
-     <li>autoplay</li> 
+     <li>autoplay</li>
      <li>preload = none | metadata | auto </li>
      <li>controls</li>
-     <li>loop</li> 
+     <li>loop</li>
      <li>mediagroup = string</li>
      <li>src (<b>required!</b>)</li>
      <li>muted?</li>
@@ -1075,17 +1074,17 @@ Buttons from <a href="http://css3button.net/">css3button.net</a></small></small>
      <ul>
      <li>&lt;track&gt;</li>
      </ul>
-     
+
       </section>
-  </div> 
-  
+  </div>
+
     <div class="slide" style="padding:0; overflow:hidden">
       <object data="http://westciv.com/tools/audio/" style="height: 780px;
 width: 940px;
-overflow:scroll; text-align:center "> 
-             
-     </object> 
-  </div> 
+overflow:scroll; text-align:center ">
+
+     </object>
+  </div>
      <div class="slide">
       <header>
          <h1>&lt;video&gt;
@@ -1095,10 +1094,10 @@ overflow:scroll; text-align:center ">
       <div style="float:left">
       <p>Attributes</p>
      <ul>
-     <li>autoplay</li> 
+     <li>autoplay</li>
      <li>preload = none | metadata | auto </li>
      <li>controls</li>
-     <li>loop</li> 
+     <li>loop</li>
      <li><b>poster</b></li>
      <li>height</li>
      <li>width</li>
@@ -1116,15 +1115,15 @@ overflow:scroll; text-align:center ">
      <li>&lt;track&gt;</li>
      </ul
       ></section>
-  </div> 
-  
+  </div>
+
      <div class="slide">
       <header>
          <h1>&lt;video&gt; example code
          </h1>
       </header>
       <section class="content">
-      <pre contenteditable>&lt;video loop autoplay controls autobuffer 
+      <pre contenteditable>&lt;video loop autoplay controls autobuffer
       preload=&quot;metadata&quot; poster=&quot;poster.jpg&quot;&gt;
 &lt;source src=&quot;movie.ogg&quot;  type='video/ogg; codecs="theora, vorbis"'&gt;
 &lt;source src=&quot;movie.mp4&quot; type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;
@@ -1142,15 +1141,15 @@ overflow:scroll; text-align:center ">
 <pre contenteditable>&lt;video src="movie.ogg"&gt;</pre>
 </section>
 </div>
-  
+
   <div class="slide" style="padding:0; overflow:hidden">
       <object data="http://westciv.com/tools/video/" style="height: 780px;
 width: 940px;
-overflow:scroll; text-align:center "> 
-             
-     </object> 
-  </div> 
-  
+overflow:scroll; text-align:center ">
+
+     </object>
+  </div>
+
     <div class="slide">
       <header>
          <h1>&lt;track&gt;
@@ -1166,21 +1165,21 @@ overflow:scroll; text-align:center ">
         </ul>
         <pre contenteditable>&lt;track kind=captions src=captions.srt&gt;</pre>
       </section>
-  </div>  
-  
-  
-  
-  
+  </div>
+
+
+
+
      <div class="slide">
       <header>
          <h1>canvas
          </h1>
       </header><object data="http://gyu.que.jp/jscloth/" style="height: 450px;
 width: 500px;
-overflow:scroll; text-align:center; float:right "> 
-             
-     </object> 
-      
+overflow:scroll; text-align:center; float:right ">
+
+     </object>
+
 <p style="clear:left; margin: 30px 10px; border:1px solid rgba(255,255,255,0.5); padding: 30px 0; border-width:1px 0;">
       Very <a href="http://www.standardista.com/html5/html5-introduction-to-canvas">basic canvas tutorial</a></p>
       <ul class="icons" style="clear: both;">
@@ -1191,17 +1190,17 @@ overflow:scroll; text-align:center; float:right ">
          <li class="ie new">IE 9</li>
          <li class="txt"><a href="http://code.google.com/p/explorercanvas/">ExplorerCanvas</a> for IE8-</li>
      </ul>
-  </div> 
-  
+  </div>
+
 <div class="slide" style="padding:0; overflow:hidden">
       <object data="http://mbostock.github.com/d3/ex/voronoi.html" style="height: 780px;
 width: 940px;
-overflow:scroll; text-align:center "> 
-             
-     </object> 
+overflow:scroll; text-align:center ">
+
+     </object>
      <header style="position:absolute; top:40px; width: 100%; text-align:center"><h1>SVG</h1></header>
-  </div>      
-  
+  </div>
+
      <div class="slide">
       <header>
          <h1>WebGL
@@ -1219,49 +1218,49 @@ overflow:scroll; text-align:center ">
          <li class="opera new">Opera 12?</li>
          <li class="ie bad">IE 10</li>
          <li class="txt">Require hardware</li>
-     </ul> <input type="button" class="button" value="Kill the next slide" 
+     </ul> <input type="button" class="button" value="Kill the next slide"
      onclick="killwebgl();"/>
       </section>
       <script defer>
 	  function killwebgl(){
-		  var el = document.getElementById('webglslide'); 
+		  var el = document.getElementById('webglslide');
 		  el.innerHTML = '';
 		  }
 	  </script>
       </section>
-  </div> 
-  
-  
-  
-  
+  </div>
+
+
+
+
    <div class="slide" style="padding:0; overflow:hidden" id="webglslide" >
       <object data="http://webglsamples.googlecode.com/hg/aquarium/aquarium.html" style="height: 780px;
 width: 940px;
-overflow:scroll; text-align:center "> 
-             
-     </object> 
-  </div> 
- 
- 
- 
- 
-  
-  
-  
-<!-- ###################################################################   
+overflow:scroll; text-align:center ">
+
+     </object>
+  </div>
+
+
+
+
+
+
+
+<!-- ###################################################################
 
 	    Part 4: JS APIs
 
-     ################################################################### -->    
-    
+     ################################################################### -->
+
    <div class="slide intro">
       <header>
          <h1><a href="part4.html">Section 4:</a><br>
 JavaScript APIs</h1>
          </h1>
       </header>
-  </div> 
-  
+  </div>
+
      <div class="slide">
       <header>
          <h1>APIs
@@ -1287,29 +1286,29 @@ JavaScript APIs</h1>
       <li>Touch events </li>
       </ul>
       </section>
-  </div> 
- 
-    
-   <div class="slide intro"> 
+  </div>
+
+
+   <div class="slide intro">
      <header><h1>Thank you</h1></header>
-     <section class="content"> 
-       <p>Estelle Weyl 
+     <section class="content">
+       <p>Estelle Weyl
      	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
      </p>
             <p><a href="http://standardista.com">www.standardista.com</a></p>
-            <p><a href="http://twitter.com/estellevw">@estellevw</a></p>     
+            <p><a href="http://twitter.com/estellevw">@estellevw</a></p>
      </section>
-    </div>   
+    </div>
    </div>
-   
+
   </div>
- 
- 
-<!-- ###################################################################   
+
+
+<!-- ###################################################################
 
 	    END
 
-     ################################################################### --> 
+     ################################################################### -->
 <script>
 function vendorPrefix(prefix, id){
 	  var prefixTxt = 'cat';
@@ -1322,7 +1321,7 @@ function vendorPrefix(prefix, id){
 			break;
 			case 'ms':
 				prefixTxt = '-ms-';
-			break;	
+			break;
 			case 'o':
 				prefixTxt = '-o-';
 			break;
@@ -1334,10 +1333,10 @@ function vendorPrefix(prefix, id){
 	  for(var i = 0, j = spans.length; i < j; i++ ){
 	  	spans[i].innerHTML = prefixTxt;
 	  }
-			
+
 	}
-	
-	
+
+
   (function() {
   var doc = document;
   var disableBuilds = true;
@@ -1435,7 +1434,7 @@ function vendorPrefix(prefix, id){
   var canTransition = (function() {
   var ver = parseFloat(ua.split('Version/')[1]) || undefined;
   // test to determine if this browser can handle CSS transitions.
-  var cachedCanTransition = 
+  var cachedCanTransition =
     (isWK || (isFF && isFF > 3.6 ) || (isOpera && ver >= 10.5));
     return function() { return cachedCanTransition; }
   })();
@@ -1555,15 +1554,15 @@ function vendorPrefix(prefix, id){
     }catch (e) { /* squeltch */ }
     this.current = isNaN(this.current) ? 1 : this.current;
     var _t = this;
-    doc.addEventListener('keydown', 
+    doc.addEventListener('keydown',
         function(e) { _t.handleKeys(e); }, false);
-    doc.addEventListener('mousewheel', 
+    doc.addEventListener('mousewheel',
         function(e) { _t.handleWheel(e); }, false);
-    doc.addEventListener('DOMMouseScroll', 
+    doc.addEventListener('DOMMouseScroll',
         function(e) { _t.handleWheel(e); }, false);
-    doc.addEventListener('touchstart', 
+    doc.addEventListener('touchstart',
         function(e) { _t.handleTouchStart(e); }, false);
-    doc.addEventListener('touchend', 
+    doc.addEventListener('touchend',
         function(e) { _t.handleTouchEnd(e); }, false);
     window.addEventListener('popstate',
         function(e) { _t.go(e.state); }, false);
@@ -1641,9 +1640,9 @@ function vendorPrefix(prefix, id){
       }
     },
     handleKeys: function(e) {
-      
+
       if (/^(input|textarea)$/i.test(e.target.nodeName)) return;
-      
+
       switch (e.keyCode) {
         case 37: // left arrow
           this.prev(); break;
@@ -1678,10 +1677,10 @@ function vendorPrefix(prefix, id){
 
   </script>
   <!--[if lt IE 9]>
-  <script 
+  <script
   src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
   <script>CFInstall.check({ mode: "overlay" });</script>
-  <![endif]--> 
- 
-  </body> 
+  <![endif]-->
+
+  </body>
 </html>

@@ -1,54 +1,53 @@
 <!doctype html>
 <meta charset="utf-8">
-<html> 
-  <head> 
+<html>
+  <head>
     <!--[if gte IE 9]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <![endif]--> 
+    <![endif]-->
     <!--[if lt IE 9]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
-    <![endif]--> 
+    <![endif]-->
     <meta charset="utf-8" />
     <title>HTML5 &amp; CSS3: The Good Enough Parts</title>
     <link href="http://fonts.googleapis.com/css?family=Paytone+One:regular" rel="stylesheet" type="text/css" />
-    
-<link rel="stylesheet" media="print" href="../openwebcamp3/print.css"/>  
-<link rel="stylesheet" media="all" href="../openwebcamp3/screen.css"/>  
-<link rel="stylesheet" media="all" href="../openwebcamp3/effects.css"/>
-<link rel="stylesheet" href="http://standardista.com/cssgradients/css/religion.css"/> 
 
-</head> 
-<body> 
+<link rel="stylesheet" media="print" href="css/print.css"/>
+<link rel="stylesheet" media="all" href="css/screen.css"/>
+<link rel="stylesheet" media="all" href="css/effects.css"/>
 
-  
+</head>
+<body>
+
+
   <div id="info">
     <p>Estelle Weyl &middot <a href="http://standardista.com">Standardista.com</a> &middot; <a href="http://www.twitter.com/estellevw">@estellevw</a> &middot;Press <span class="key">&rarr;</span> key to advance.  &middot;Press <span class="key">2</span> for notes.
     </p>
   </div>
-  
+
   <div id="presentation">
-     
+
    <div id="presentation-counter"></div>
-      
+
    <div id="slides">
-   
-    
-    
-   
+
+
+
+
     <div class="slide intro">
      <header>
       <h1>HTML5 &amp; CSS3:<br>
 		  the Good Enough Parts</h1>
-      <p>Estelle Weyl 
+      <p>Estelle Weyl
      	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
      </p>
      <p>
      	<a href="http://standardista.com">www.standardista.com</a><br>
         <a href="http://twitter.com/estellevw">@estellevw</a>
-     </p>  
+     </p>
      </header>
-    </div>   
-    
+    </div>
+
     <div class="slide intro">
      <header style="font-size:30px">
       <h1>Part 1: CSS3 Snow</h1>
@@ -56,8 +55,8 @@
       <h1>Part 3: HTML5</h1>
       <h1><b>&rarr;Part 4: APIs&larr;</b></h1>
      </header>
-    </div> 
-    
+    </div>
+
   <div class="slide" id="components">
       <section class="content">
       <div class="col">
@@ -137,7 +136,7 @@
         <li>JSON parsing</li>
         </ul>
         </div>
-        
+
         </div>
         <div class="col">
         <div class="even" style="border-top-left-radius:0; border-top-right-radius:0;">
@@ -174,30 +173,30 @@
       </div>
       </div>
       </section>
-  </div> 
-  
-  
-  
-    
-    
-    
-     
- 
-  
-<!-- ###################################################################   
+  </div>
+
+
+
+
+
+
+
+
+
+<!-- ###################################################################
 
 	    Part 4: JS APIs
 
-     ################################################################### -->    
-    
+     ################################################################### -->
+
    <div class="slide intro">
       <header>
          <h1><b>Part 4:</b><br>
 JavaScript APIs</h1>
          </h1>
       </header>
-  </div> 
-  
+  </div>
+
      <div class="slide">
       <header>
          <h1>JavaScript APIs
@@ -227,15 +226,15 @@ JavaScript APIs</h1>
       <li style="opacity: 0.3;">Toolbar/context menu</li>
       </ul>
       </section>
-  </div> 
-  
-  
+  </div>
+
+
     <div class="slide">
       <header>
          <h1>Offline Web Applications
          </h1>
       </header>
-     
+
       <section class="content">
       <pre contenteditable>&lt;!doctype HTML&gt;<br>&lt;html manifest=&quot;cache.manifest&quot;&gt;<br>&lt;meta charset=&quot;utf-8&quot;/&gt;<br>&lt;title&gt;...</pre>
       <pre contenteditable>CACHE MANIFEST
@@ -260,9 +259,9 @@ dosomething.cgi</pre>
         <li class="txt">Require hardware</li>
       </ul>
     </section>
-  </div>  
-  
-  
+  </div>
+
+
     <div class="slide">
       <header>
          <h1>ApplicationCache
@@ -272,56 +271,56 @@ dosomething.cgi</pre>
       <p>Add to .htaccess file</p>
       <pre contenteditable>AddType text/cache-manifest manifest</pre>
       <pre contenteditable>if(window.applicationCache){
- var appCache = window.applicationCache; 
+ var appCache = window.applicationCache;
  appCache.update();
- if (appCache.status == appCache.UPDATEREADY ){ 
+ if (appCache.status == appCache.UPDATEREADY ){
       appCache.swapCache();
  }
 }</pre>
       </section>
-  </div>  
-  
-  
-  
-  <div class="slide" id="web-storage"> 
-          
-          <header> <h1>localStorage</h1></header> 
-          <section> 
-<pre contenteditable> 
+  </div>
+
+
+
+  <div class="slide" id="web-storage">
+
+          <header> <h1>localStorage</h1></header>
+          <section>
+<pre contenteditable>
 saveButton.addEventListener('click', function () {
   window.<b>localStorage</b>.<b>setItem</b>('value', textarea.value);
 }, false);
 textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
-</pre> 
-            <p id="localstorage-message">Save text value on the client side (crash-safe)</p> 
-            <textarea id="ls" placeholder="Type your text here..."></textarea> 
+</pre>
+            <p id="localstorage-message">Save text value on the client side (crash-safe)</p>
+            <textarea id="ls" placeholder="Type your text here..."></textarea>
             <input type="button" value="save" id="savelocalstorage" class="button"/>
-            <input type=button id="savelocalstorage" class="button" onClick="window.open('localstorageiframe.html', 'ls', 'width=200,height=200')" value="Open Test"/> 
+            <input type=button id="savelocalstorage" class="button" onClick="window.open('localstorageiframe.html', 'ls', 'width=200,height=200')" value="Open Test"/>
             <p id="lsLog"></p>
-           
+
  <pre contenteditable>	var el = document.querySelector('#myID');
 	// place content from local storage on load if there is one
-	el.innerHTML = window.localStorage.getItem('value');</pre> 
-<script defer> 
+	el.innerHTML = window.localStorage.getItem('value');</pre>
+<script defer>
   (function(){
 	// if local storage not supported, quit
 	try {
-	  (window.localStorage.getItem) 
+	  (window.localStorage.getItem)
 	} catch(e){
-	  return; 
+	  return;
 	}
 
 	var textarea = document.querySelector('#ls');
-	
-	
+
+
 	// place content from local storage on load if there is one
 	if (!textarea.value) {
 	  textarea.value = window.localStorage.getItem('value');
 	}
-	
+
 	updateLog(false);
-	
-	
+
+
 	// your content will be saved locally
 	document.querySelector('#savelocalstorage').addEventListener('click', function () {
 	  window.localStorage.setItem('value', textarea.value);
@@ -345,11 +344,11 @@ textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
 	  }
 	}
 
-  })();  
-</script> 
-</section> 
-        </div> 
-  
+  })();
+</script>
+</section>
+        </div>
+
      <div class="slide">
       <header>
          <h1>Session Storage
@@ -370,17 +369,17 @@ textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
          <li class="txt">Well Supported!</li>
      </ul>
       </section>
-  </div> 
-  
-  
-  
-  
-  
+  </div>
+
+
+
+
+
      <div class="slide">
-      
+
           <header><h1>Web SQL</h1></header>
           <section>
-<pre contenteditable>var db = window.<b>openDatabase</b>("DBName", "1.0", "description", 5*1024*1024); 
+<pre contenteditable>var db = window.<b>openDatabase</b>("DBName", "1.0", "description", 5*1024*1024);
   db.<b>transaction</b>(function(tx) {
   tx.<b>executeSql</b>(<em>"SELECT * FROM test"</em>, [ ], successCallback, errorCallback);
 });
@@ -397,7 +396,7 @@ textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
             <ul class="record-list" id="db-results"></ul>
             <div id="db-log"></div>
           </div>
-          
+
           <ul class="icons" style="clear: both;">
          <li class="chrome">Chrome</li>
          <li class="safari">Safari</li>
@@ -413,7 +412,7 @@ textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
               var log = document.getElementById('db-log');
               if (window.openDatabase) {
                 db = openDatabase("DBTest", "1.0", "HTML5 Database API example", 200000);
-                showRecords();  
+                showRecords();
               }
               document.getElementById('db-results').addEventListener('click', function(e) { e.preventDefault(); }, false);
 
@@ -428,7 +427,7 @@ textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
                   tx.executeSql("SELECT * FROM testTable", [], function(tx, result) {
                     for (var i = 0, item = null; i < result.rows.length; i++) {
                       item = result.rows.item(i);
-                      document.getElementById('db-results').innerHTML += 
+                      document.getElementById('db-results').innerHTML +=
                           '<li><span contenteditable="true" onkeyup="webSqlSample.updateRecord('+item['id']+', this)">'+
                           item['text'] + '</span> <a href="#" onclick="webSqlSample.deleteRecord('+item['id']+')">[Delete]</a></li>';
                     }
@@ -452,7 +451,7 @@ textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
                       function(tx, result) {
                         log.innerHTML = '';
                         showRecords();
-                      }, 
+                      },
                       onError);
                 });
               }
@@ -466,7 +465,7 @@ textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
               function deleteRecord(id) {
                 db.transaction(function(tx) {
                   tx.executeSql("DELETE FROM testTable WHERE id=?", [id],
-                      function(tx, result) { showRecords() }, 
+                      function(tx, result) { showRecords() },
                       onError);
                 });
               }
@@ -475,11 +474,11 @@ textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
               function dropTable() {
                 db.transaction(function(tx) {
                   tx.executeSql("DROP TABLE testTable", [],
-                      function(tx) { showRecords() }, 
+                      function(tx) { showRecords() },
                       onError);
                 });
               }
-              
+
               return {
                 newRecord: newRecord,
                 createTable: createTable,
@@ -490,9 +489,9 @@ textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
             })();
           </script>
       </section>
-  </div> 
-  
-  
+  </div>
+
+
 <div class="slide" id="indexed-db">
           <header><h1>Index dB</h1></header>
           <section>
@@ -713,9 +712,9 @@ indexDatabase.onsuccess = function(event) {
           </script>
         </section>
       </div>
-  
-  
-  
+
+
+
 <div class="slide" id="geolocation">
 	<header>
          <h1>Geolocation</h1>
@@ -732,7 +731,7 @@ indexDatabase.onsuccess = function(event) {
 }
 function error(text){
 	text = text || 'failed';
-	console.log(text); 
+	console.log(text);
  }
 function success(location){
 	 var lat = location.<b>coords.latitude</b>;
@@ -757,7 +756,7 @@ function getLocation(){
 
  function error(text){
 	text = text || 'failed';
-	console.log(text); 
+	console.log(text);
  }
  function success(location){
 	  console.log(location);
@@ -781,12 +780,12 @@ function getLocation(){
       </header>
       <section class="content">
 <pre contenteditable>
-window.history.<b>pushState(data, title, url)</b> 
+window.history.<b>pushState(data, title, url)</b>
 <span class="notes">/* Pushes data into history, with title, and, if provided, the URL.*/<br>
 </span>
-window.history.<b>replaceState(data, title, url)</b> 
+window.history.<b>replaceState(data, title, url)</b>
 <span class="notes">/* Updates current history entry to given data, with title, and, if provided, URL */</span></pre>
-       
+
 <pre contenteditable>window.history.<b>length</b> <span class="notes">/* number of entries in session history */</span>
 
 window.history.<b>state</b> <span class="notes">/* current state */</span>
@@ -798,10 +797,10 @@ window.history.<b>back()</b> <span class="notes">/* Goes back one step &Delta;==
 window.history.<b>forward()</b> <span class="notes">/* Goes forward one step &Delta; = 1*/</span></pre>
        </pre>
       </section>
-  </div> 
+  </div>
 
 
-  
+
 <div class="slide">
   <header>
      <h1>Drag and Drop</h1>
@@ -823,7 +822,7 @@ window.history.<b>forward()</b> <span class="notes">/* Goes forward one step &De
               var dragZone = document.getElementById('drag-zone');
               var dropZone = document.getElementById('drop-zone');
               dragZone.addEventListener('dragstart', function(event) {
-                if (event.target.className) { 
+                if (event.target.className) {
                   event.target.style.border = "1px solid #888";
                 }
                 return true;
@@ -901,20 +900,20 @@ window.history.<b>forward()</b> <span class="notes">/* Goes forward one step &De
               }, false);
             })();
             </script>
-          
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
   <ul class="icons" style="clear: none;">
      <li class="chrome">Chrome 8</li>
      <li class="safari">Safari</li>
@@ -924,8 +923,8 @@ window.history.<b>forward()</b> <span class="notes">/* Goes forward one step &De
      <li class="txt">mobile: only Android</li>
  </ul>
   </section>
-</div> 
-  
+</div>
+
 
 
      <div class="slide">
@@ -950,14 +949,14 @@ window.history.<b>forward()</b> <span class="notes">/* Goes forward one step &De
      </ul>
         <p>Tutorial: <a href="http://www.htmlfivewow.com/">Talk from Google I/O</a></p>
       </section>
-  </div> 
-  
-  
+  </div>
+
+
   <div class="slide">
       <header>
          <h1>File API</h1>
       </header>
-      <section class="content"> 
+      <section class="content">
 <pre contenteditable>  &lt;input type="file" id="files" accept="image/*" multiple&gt;
 document.querySelector('#files').onchange = function(e) {
   var files = e.target.files; // FileList of File objects.
@@ -971,7 +970,7 @@ document.querySelector('#files').onchange = function(e) {
       <input type="file" id="filereader-files" class="hidden-input" multiple accept="image/*">
       <input type=button id="file-select" class="button" value="Select image files">  </p>
       <pre contenteditable><output id="filereader-list"></output></pre>
-  
+
 <div><output id="filereader-list"></output></div>
 <script>
 /*******************************************************************************
@@ -996,8 +995,8 @@ document.querySelector('#filereader-files').onchange = function(e) {
 </script>
   </section>
   </div>
-  
-  
+
+
      <div class="slide">
       <header>
          <h1>Web Workers
@@ -1010,8 +1009,8 @@ document.querySelector('#filereader-files').onchange = function(e) {
         <li>Allows UI thread to continue</li>
       </ul>
       </section>
-  </div> 
-  
+  </div>
+
        <div class="slide">
       <header>
          <h1>Web Sockets
@@ -1023,8 +1022,8 @@ document.querySelector('#filereader-files').onchange = function(e) {
 <li>Only  data  is sent, without HTTP headers (reduces bandwidth.</li>
 </ul>
       </section>
-  </div> 
-  
+  </div>
+
    <div class="slide">
   <header>
      <h1>JS Events and Methods
@@ -1040,7 +1039,7 @@ document.querySelector('#filereader-files').onchange = function(e) {
          <li class="ie new">IE 9</li>
          <li class="txt">mobile: all</li>
   </ul>
-  
+
  <pre contenteditable>var element = document.querySelector(selectors);
 var element = $(selectors)[0];
 
@@ -1083,17 +1082,17 @@ console.log(el.<b>classList</b>.toString() == el.className); // true</pre>
          <li class="txt">mobile: Android 3, Opera 11.1</li>
   </ul>
       </section>
-  </div>  
-  
-  
-  
-  
+  </div>
+
+
+
+
   <div class="slide" id="notifications-api">
-        
+
           <header><h1>Notifications</h1></header>
           <section>
           <pre contenteditable>if (window.<b>webkitNotifications.checkPermission</b>() == 0) {
-  window.webkitNotifications.createNotification(picture, title, 
+  window.webkitNotifications.createNotification(picture, title,
       content).<b>show</b>();
 } else {
   window.<b>webkitNotifications.requestPermission</b>();
@@ -1102,8 +1101,8 @@ console.log(el.<b>classList</b>.toString() == el.className); // true</pre>
           <p>
             <input type="button" class="button" id="request-permission" value="Allow / Reset Notifications"/>
           </p>
-          
-         
+
+
           <input type="button" class="button" id="show-notification" value="Show notifications"/>
         </div>
 
@@ -1116,42 +1115,42 @@ console.log(el.<b>classList</b>.toString() == el.className); // true</pre>
             shownNotice();
           }, false);
 
-         
-		  
+
+
 		  function shownNotice(){
 			if (window.webkitNotifications.checkPermission() == 0) {
 			console.log('hi');
                 // note the show()
                 window.webkitNotifications.createNotification('http://standardista.com', 'Estelle Weyl', 'Tthat\'s all we have for you today folks').show();
               } else {
-				  
+
                 alert('You have to select "Set notification permissions for this page" first notifications to work.');
                 return;
-              }  
+              }
 		  }
 
-        
+
           </script>
 
           </section>
         <span class="counter"></span></div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<!-- ###################################################################   
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ###################################################################
 
 	    Conclusion
 
-     ################################################################### --> 
+     ################################################################### -->
   <div class="slide intro">
       <header>
          <h1><b>Scene 5:</b><br>The End</h1>
@@ -1159,28 +1158,28 @@ console.log(el.<b>classList</b>.toString() == el.className); // true</pre>
       <section class="content">
       </section>
       </div>
-      
-    
-   <div class="slide intro"> 
+
+
+   <div class="slide intro">
      <header><h1>Thank you</h1></header>
-     <section class="content"> 
-       <p>Estelle Weyl 
+     <section class="content">
+       <p>Estelle Weyl
      	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
      </p>
             <p><a href="http://standardista.com">www.standardista.com</a></p>
-            <p><a href="http://twitter.com/estellevw">@estellevw</a></p>     
+            <p><a href="http://twitter.com/estellevw">@estellevw</a></p>
      </section>
-    </div>   
+    </div>
    </div>
-   
+
   </div>
- 
- 
-<!-- ###################################################################   
+
+
+<!-- ###################################################################
 
 	    END
 
-     ################################################################### --> 
+     ################################################################### -->
 <script>
 function vendorPrefix(prefix, id){
 	  var prefixTxt = 'cat';
@@ -1193,7 +1192,7 @@ function vendorPrefix(prefix, id){
 			break;
 			case 'ms':
 				prefixTxt = '-ms-';
-			break;	
+			break;
 			case 'o':
 				prefixTxt = '-o-';
 			break;
@@ -1205,10 +1204,10 @@ function vendorPrefix(prefix, id){
 	  for(var i = 0, j = spans.length; i < j; i++ ){
 	  	spans[i].innerHTML = prefixTxt;
 	  }
-			
+
 	}
-	
-	
+
+
   (function() {
   var doc = document;
   var disableBuilds = true;
@@ -1306,7 +1305,7 @@ function vendorPrefix(prefix, id){
   var canTransition = (function() {
   var ver = parseFloat(ua.split('Version/')[1]) || undefined;
   // test to determine if this browser can handle CSS transitions.
-  var cachedCanTransition = 
+  var cachedCanTransition =
     (isWK || (isFF && isFF > 3.6 ) || (isOpera && ver >= 10.5));
     return function() { return cachedCanTransition; }
   })();
@@ -1426,15 +1425,15 @@ function vendorPrefix(prefix, id){
     }catch (e) { /* squeltch */ }
     this.current = isNaN(this.current) ? 1 : this.current;
     var _t = this;
-    doc.addEventListener('keydown', 
+    doc.addEventListener('keydown',
         function(e) { _t.handleKeys(e); }, false);
-    doc.addEventListener('mousewheel', 
+    doc.addEventListener('mousewheel',
         function(e) { _t.handleWheel(e); }, false);
-    doc.addEventListener('DOMMouseScroll', 
+    doc.addEventListener('DOMMouseScroll',
         function(e) { _t.handleWheel(e); }, false);
-    doc.addEventListener('touchstart', 
+    doc.addEventListener('touchstart',
         function(e) { _t.handleTouchStart(e); }, false);
-    doc.addEventListener('touchend', 
+    doc.addEventListener('touchend',
         function(e) { _t.handleTouchEnd(e); }, false);
     window.addEventListener('popstate',
         function(e) { _t.go(e.state); }, false);
@@ -1512,9 +1511,9 @@ function vendorPrefix(prefix, id){
       }
     },
     handleKeys: function(e) {
-      
+
       if (/^(input|textarea)$/i.test(e.target.nodeName)) return;
-      
+
       switch (e.keyCode) {
         case 37: // left arrow
           this.prev(); break;
@@ -1549,10 +1548,10 @@ function vendorPrefix(prefix, id){
 
   </script>
   <!--[if lt IE 9]>
-  <script 
+  <script
   src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
   <script>CFInstall.check({ mode: "overlay" });</script>
-  <![endif]--> 
- 
-  </body> 
+  <![endif]-->
+
+  </body>
 </html>
