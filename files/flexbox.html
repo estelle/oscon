@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head style="display: block;">
+  <meta charset="utf-8"/>
+  <title>Align itemss</title>
+  <style
+  div {width: 50%;}
+  div {
+    border: solid 5px;
+    background-color: #eee;
+  }
+  p {
+    border: solid 2px #666;
+    padding: 5px;
+    background-color: #bbb;
+    margin: 0;
+  }
+  body {
+    font-size: 16px;
+    font-family: monospace;
+  }
+  </style>
+  <style style="display: block; padding: 10px; white-space: pre; font-size: 16px; font-family: monospace;" contenteditable>
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.items:first-of-type {
+  align-self: auto || flex-start || flex-end || center || baseline || stretch;
+}</style>
+</head>
+<body>
+    <div class="container">
+    <p class=items style="font-size: 1.4rem;">One</p>
+    <p class=items  style="font-size: 1.2rem;">Two<br/>Two</p>
+    <p class=items  style="font-size: 1rem;">Three<br/>Three<br/>Three</p>
+    <p  class=items style="font-size: 0.8rem;">Four<br/>Four<br/>Four<br/>Four</p>
+    <p  class=items style="font-size: 0.7rem;">Five<br/>Five<br/>Five<br/>Five<br/>Five</p>
+  </div>
+
+</body>
+</html>
