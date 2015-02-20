@@ -4,6 +4,14 @@
   <meta charset="utf-8"/>
   <title>Align itemss</title>
   <style>
+  head, style {display: block;}
+[contenteditable] {-webkit-user-modify: read-write-plaintext-only;}
+style:first-of-type {visibility:hidden;}
+#editme {padding: 20px; font-size: 1.5em; white-space: pre; font-family: monospace; white-space:pre; border-radius: 10px; border: 3px solid #aaa; background-color:rgba(255,255,255,0.6); margin: 20px auto; width: 80%; font-family:"Courier New", Courier, monospace; position: absolute; left: 100px; z-index: 2; text-shadow: -1px;}
+:root {height: 100%;}
+
+body {height: 100%; width: 100%; position: absolute; top: 0; left: 0; z-index: 1;
+    margin: 0;}
   div {width: 50%;}
   div {
     border: solid 5px;
@@ -20,7 +28,7 @@
     font-family: monospace;
   }
   </style>
-  <style style="display: block; padding: 10px; white-space: pre; font-size: 16px; font-family: monospace;" contenteditable>
+  <style id="editme" contenteditable>
 .container {
   display: flex;
   flex-direction: row;
